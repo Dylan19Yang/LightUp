@@ -11,19 +11,28 @@
 		0E0DA8031BB188040029808F /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0E0DA8021BB188040029808F /* AppDelegate.mm */; };
 		0E0DA8091BB188040029808F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E0DA8071BB188040029808F /* Main.storyboard */; };
 		0E0DA80B1BB188040029808F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E0DA80A1BB188040029808F /* Assets.xcassets */; };
-		0E0DA80E1BB188040029808F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E0DA80C1BB188040029808F /* LaunchScreen.storyboard */; };
-		0E86D72D1BB43A8D00B1F158 /* BaiduMapAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E86D72C1BB43A8D00B1F158 /* BaiduMapAPI.framework */; };
 		0E86D72F1BB43ABE00B1F158 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E86D72E1BB43ABE00B1F158 /* CoreLocation.framework */; };
 		0E86D7311BB43AC600B1F158 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E86D7301BB43AC600B1F158 /* QuartzCore.framework */; };
 		0E86D7331BB43ACD00B1F158 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E86D7321BB43ACD00B1F158 /* OpenGLES.framework */; };
 		0E86D7351BB43AD400B1F158 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E86D7341BB43AD400B1F158 /* SystemConfiguration.framework */; };
 		0E86D7371BB43ADE00B1F158 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E86D7361BB43ADE00B1F158 /* CoreGraphics.framework */; };
 		0E86D7391BB43AE500B1F158 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E86D7381BB43AE500B1F158 /* Security.framework */; };
-		0E86D73B1BB43B5300B1F158 /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0E86D73A1BB43B5300B1F158 /* mapapi.bundle */; settings = {ASSET_TAGS = (); }; };
-		0E86D7411BB442A100B1F158 /* HttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E86D7401BB442A100B1F158 /* HttpClient.m */; settings = {ASSET_TAGS = (); }; };
-		0E86D7461BB447E000B1F158 /* API.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E86D7451BB447E000B1F158 /* API.m */; settings = {ASSET_TAGS = (); }; };
-		0E86D74A1BB44EB800B1F158 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E86D7491BB44EB800B1F158 /* LoginViewController.m */; settings = {ASSET_TAGS = (); }; };
-		E6C1A8300F7913B766835D4A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F06FB972458B08027870A1DA /* libPods.a */; };
+		0E86D7411BB442A100B1F158 /* HttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E86D7401BB442A100B1F158 /* HttpClient.m */; };
+		0E86D7461BB447E000B1F158 /* API.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E86D7451BB447E000B1F158 /* API.m */; };
+		0E86D74A1BB44EB800B1F158 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E86D7491BB44EB800B1F158 /* LoginViewController.m */; };
+		F19B044B1BB646E6007E6981 /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F19B044A1BB646E6007E6981 /* mapapi.bundle */; };
+		F19B044D1BB64728007E6981 /* BaiduMapAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F19B044C1BB64728007E6981 /* BaiduMapAPI.framework */; };
+		F19B044F1BB64888007E6981 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F19B044E1BB64888007E6981 /* libPods.a */; };
+		F1FB1AEA1BB695E3004C488E /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FB1AE91BB695E3004C488E /* RegisterViewController.m */; };
+		F1FB1AEF1BB69E7D004C488E /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FB1AED1BB69E7D004C488E /* HomeTableViewCell.m */; };
+		F1FB1AF01BB69E7D004C488E /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1FB1AEE1BB69E7D004C488E /* HomeTableViewCell.xib */; };
+		F1FB1AF61BB6A2EC004C488E /* HomeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FB1AF51BB6A2EC004C488E /* HomeDetailViewController.m */; };
+		F1FEE39F1BB662A800D99A16 /* DetailTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FEE39E1BB662A800D99A16 /* DetailTabBarViewController.m */; };
+		F1FEE3A51BB667AA00D99A16 /* HomeNavgationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FEE3A41BB667AA00D99A16 /* HomeNavgationViewController.m */; };
+		F1FEE3A81BB6682700D99A16 /* ExploreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FEE3A71BB6682700D99A16 /* ExploreViewController.m */; };
+		F1FEE3AB1BB6683F00D99A16 /* LightupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FEE3AA1BB6683F00D99A16 /* LightupViewController.m */; };
+		F1FEE3AE1BB6685600D99A16 /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FEE3AD1BB6685600D99A16 /* UserViewController.m */; };
+		F1FEE3B11BB66E3500D99A16 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FEE3B01BB66E3500D99A16 /* PhotoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,16 +42,13 @@
 		0E0DA8021BB188040029808F /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		0E0DA8081BB188040029808F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0E0DA80A1BB188040029808F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0E0DA80D1BB188040029808F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E0DA80F1BB188040029808F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0E86D72C1BB43A8D00B1F158 /* BaiduMapAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI.framework; path = LightUp/FrameWork/BaiduMapAPI.framework; sourceTree = "<group>"; };
 		0E86D72E1BB43ABE00B1F158 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		0E86D7301BB43AC600B1F158 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0E86D7321BB43ACD00B1F158 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		0E86D7341BB43AD400B1F158 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		0E86D7361BB43ADE00B1F158 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		0E86D7381BB43AE500B1F158 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		0E86D73A1BB43B5300B1F158 /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = mapapi.bundle; path = FrameWork/mapapi.bundle; sourceTree = "<group>"; };
 		0E86D73E1BB4412F00B1F158 /* NetworkConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkConstants.h; sourceTree = "<group>"; };
 		0E86D73F1BB442A100B1F158 /* HttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpClient.h; sourceTree = "<group>"; };
 		0E86D7401BB442A100B1F158 /* HttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpClient.m; sourceTree = "<group>"; };
@@ -54,6 +60,28 @@
 		43297A19F674DE35F1005359 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		BEFAFEAC8FA27BC89033150D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F06FB972458B08027870A1DA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F19B044A1BB646E6007E6981 /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = mapapi.bundle; sourceTree = "<group>"; };
+		F19B044C1BB64728007E6981 /* BaiduMapAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI.framework; sourceTree = "<group>"; };
+		F19B044E1BB64888007E6981 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/../build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		F1FB1AE81BB695E3004C488E /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		F1FB1AE91BB695E3004C488E /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		F1FB1AEC1BB69E7D004C488E /* HomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
+		F1FB1AED1BB69E7D004C488E /* HomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
+		F1FB1AEE1BB69E7D004C488E /* HomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		F1FB1AF41BB6A2EC004C488E /* HomeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeDetailViewController.h; sourceTree = "<group>"; };
+		F1FB1AF51BB6A2EC004C488E /* HomeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeDetailViewController.m; sourceTree = "<group>"; };
+		F1FEE39D1BB662A800D99A16 /* DetailTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTabBarViewController.h; sourceTree = "<group>"; };
+		F1FEE39E1BB662A800D99A16 /* DetailTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTabBarViewController.m; sourceTree = "<group>"; };
+		F1FEE3A31BB667AA00D99A16 /* HomeNavgationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeNavgationViewController.h; sourceTree = "<group>"; };
+		F1FEE3A41BB667AA00D99A16 /* HomeNavgationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeNavgationViewController.m; sourceTree = "<group>"; };
+		F1FEE3A61BB6682700D99A16 /* ExploreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExploreViewController.h; sourceTree = "<group>"; };
+		F1FEE3A71BB6682700D99A16 /* ExploreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExploreViewController.m; sourceTree = "<group>"; };
+		F1FEE3A91BB6683F00D99A16 /* LightupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightupViewController.h; sourceTree = "<group>"; };
+		F1FEE3AA1BB6683F00D99A16 /* LightupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightupViewController.m; sourceTree = "<group>"; };
+		F1FEE3AC1BB6685600D99A16 /* UserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserViewController.h; sourceTree = "<group>"; };
+		F1FEE3AD1BB6685600D99A16 /* UserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserViewController.m; sourceTree = "<group>"; };
+		F1FEE3AF1BB66E3500D99A16 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		F1FEE3B01BB66E3500D99A16 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,14 +89,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F19B044F1BB64888007E6981 /* libPods.a in Frameworks */,
 				0E86D7391BB43AE500B1F158 /* Security.framework in Frameworks */,
 				0E86D7371BB43ADE00B1F158 /* CoreGraphics.framework in Frameworks */,
 				0E86D7351BB43AD400B1F158 /* SystemConfiguration.framework in Frameworks */,
 				0E86D7331BB43ACD00B1F158 /* OpenGLES.framework in Frameworks */,
 				0E86D7311BB43AC600B1F158 /* QuartzCore.framework in Frameworks */,
 				0E86D72F1BB43ABE00B1F158 /* CoreLocation.framework in Frameworks */,
-				0E86D72D1BB43A8D00B1F158 /* BaiduMapAPI.framework in Frameworks */,
-				E6C1A8300F7913B766835D4A /* libPods.a in Frameworks */,
+				F19B044D1BB64728007E6981 /* BaiduMapAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,12 +125,11 @@
 			isa = PBXGroup;
 			children = (
 				0E86D73C1BB4404B00B1F158 /* Util */,
-				0E86D73A1BB43B5300B1F158 /* mapapi.bundle */,
+				F19B044A1BB646E6007E6981 /* mapapi.bundle */,
 				0E0DA8011BB188040029808F /* AppDelegate.h */,
 				0E0DA8021BB188040029808F /* AppDelegate.mm */,
 				0E0DA8071BB188040029808F /* Main.storyboard */,
 				0E0DA80A1BB188040029808F /* Assets.xcassets */,
-				0E0DA80C1BB188040029808F /* LaunchScreen.storyboard */,
 				0E0DA80F1BB188040029808F /* Info.plist */,
 				0E0DA7FE1BB188040029808F /* Supporting Files */,
 				0E86D7431BB443F900B1F158 /* PrefixHeader.pch */,
@@ -144,6 +171,21 @@
 			children = (
 				0E86D7481BB44EB800B1F158 /* LoginViewController.h */,
 				0E86D7491BB44EB800B1F158 /* LoginViewController.m */,
+				F1FEE39D1BB662A800D99A16 /* DetailTabBarViewController.h */,
+				F1FEE39E1BB662A800D99A16 /* DetailTabBarViewController.m */,
+				F1FEE3A31BB667AA00D99A16 /* HomeNavgationViewController.h */,
+				F1FEE3A41BB667AA00D99A16 /* HomeNavgationViewController.m */,
+				F1FB1AEB1BB69E1A004C488E /* HomeTableView */,
+				F1FEE3A61BB6682700D99A16 /* ExploreViewController.h */,
+				F1FEE3A71BB6682700D99A16 /* ExploreViewController.m */,
+				F1FEE3AF1BB66E3500D99A16 /* PhotoViewController.h */,
+				F1FEE3B01BB66E3500D99A16 /* PhotoViewController.m */,
+				F1FEE3A91BB6683F00D99A16 /* LightupViewController.h */,
+				F1FEE3AA1BB6683F00D99A16 /* LightupViewController.m */,
+				F1FEE3AC1BB6685600D99A16 /* UserViewController.h */,
+				F1FEE3AD1BB6685600D99A16 /* UserViewController.m */,
+				F1FB1AE81BB695E3004C488E /* RegisterViewController.h */,
+				F1FB1AE91BB695E3004C488E /* RegisterViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -151,13 +193,14 @@
 		A61A37449CFFC6DDD8B125D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F19B044E1BB64888007E6981 /* libPods.a */,
+				F19B044C1BB64728007E6981 /* BaiduMapAPI.framework */,
 				0E86D7381BB43AE500B1F158 /* Security.framework */,
 				0E86D7361BB43ADE00B1F158 /* CoreGraphics.framework */,
 				0E86D7341BB43AD400B1F158 /* SystemConfiguration.framework */,
 				0E86D7321BB43ACD00B1F158 /* OpenGLES.framework */,
 				0E86D7301BB43AC600B1F158 /* QuartzCore.framework */,
 				0E86D72E1BB43ABE00B1F158 /* CoreLocation.framework */,
-				0E86D72C1BB43A8D00B1F158 /* BaiduMapAPI.framework */,
 				F06FB972458B08027870A1DA /* libPods.a */,
 			);
 			name = Frameworks;
@@ -170,6 +213,18 @@
 				43297A19F674DE35F1005359 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F1FB1AEB1BB69E1A004C488E /* HomeTableView */ = {
+			isa = PBXGroup;
+			children = (
+				F1FB1AEC1BB69E7D004C488E /* HomeTableViewCell.h */,
+				F1FB1AED1BB69E7D004C488E /* HomeTableViewCell.m */,
+				F1FB1AEE1BB69E7D004C488E /* HomeTableViewCell.xib */,
+				F1FB1AF41BB6A2EC004C488E /* HomeDetailViewController.h */,
+				F1FB1AF51BB6A2EC004C488E /* HomeDetailViewController.m */,
+			);
+			name = HomeTableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +260,7 @@
 				TargetAttributes = {
 					0E0DA7FA1BB188040029808F = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 62V7J8S6D3;
 					};
 				};
 			};
@@ -231,9 +287,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E0DA80E1BB188040029808F /* LaunchScreen.storyboard in Resources */,
-				0E86D73B1BB43B5300B1F158 /* mapapi.bundle in Resources */,
+				F19B044B1BB646E6007E6981 /* mapapi.bundle in Resources */,
 				0E0DA80B1BB188040029808F /* Assets.xcassets in Resources */,
+				F1FB1AF01BB69E7D004C488E /* HomeTableViewCell.xib in Resources */,
 				0E0DA8091BB188040029808F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,11 +334,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1FEE3A81BB6682700D99A16 /* ExploreViewController.m in Sources */,
+				F1FEE3AE1BB6685600D99A16 /* UserViewController.m in Sources */,
 				0E0DA8031BB188040029808F /* AppDelegate.mm in Sources */,
+				F1FEE39F1BB662A800D99A16 /* DetailTabBarViewController.m in Sources */,
+				F1FEE3AB1BB6683F00D99A16 /* LightupViewController.m in Sources */,
 				0E86D7411BB442A100B1F158 /* HttpClient.m in Sources */,
 				0E0DA8001BB188040029808F /* main.m in Sources */,
+				F1FB1AEA1BB695E3004C488E /* RegisterViewController.m in Sources */,
 				0E86D7461BB447E000B1F158 /* API.m in Sources */,
+				F1FB1AEF1BB69E7D004C488E /* HomeTableViewCell.m in Sources */,
 				0E86D74A1BB44EB800B1F158 /* LoginViewController.m in Sources */,
+				F1FEE3B11BB66E3500D99A16 /* PhotoViewController.m in Sources */,
+				F1FB1AF61BB6A2EC004C488E /* HomeDetailViewController.m in Sources */,
+				F1FEE3A51BB667AA00D99A16 /* HomeNavgationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,14 +360,6 @@
 				0E0DA8081BB188040029808F /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0E0DA80C1BB188040029808F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0E0DA80D1BB188040029808F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -393,15 +450,21 @@
 			baseConfigurationReference = BEFAFEAC8FA27BC89033150D /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LightUp/FrameWork",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = LightUp/PrefixHeader.pch;
 				INFOPLIST_FILE = LightUp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Atlas19.LightUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,15 +475,21 @@
 			baseConfigurationReference = 43297A19F674DE35F1005359 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LightUp/FrameWork",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = LightUp/PrefixHeader.pch;
 				INFOPLIST_FILE = LightUp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Atlas19.LightUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
