@@ -7,6 +7,8 @@
 //
 
 #import "RegisterViewController.h"
+#import "API.h"
+#import "DetailTabBarViewController.h"
 
 @interface RegisterViewController ()
 
@@ -24,21 +26,6 @@
     [self.femaleBtn addTarget:self action:@selector(femaleBtnClickEvent) forControlEvents:UIControlEventTouchUpInside];
     // Do any additional setup after loading the view.
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 #pragma mark - UITextFieldDelegate
 
@@ -125,7 +112,30 @@
     }
     else
     {
-        //注册接口
+        UIAlertView *waitAlert = [[UIAlertView alloc]initWithTitle:@"请稍候" message:nil delegate:self cancelButtonTitle:nil otherButtonTitles:nil, nil];
+        [waitAlert show];
+
+        [[API sharedAPI] registerWithName:self.registerNameTextField.text mobile:self.registerPhoneTextField.text password:self.registerPassWordTetxField.text gender:self.isMale?@"男":@"女" andBLock:^(id responseObject, NSError *error) {
+            [waitAlert dismissWithClickedButtonIndex:0 animated:YES];
+            NSDictionary *dic=(NSDictionary*)responseObject;
+            if (error) {
+                UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"错误" message:@"网络异常" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+                [alert show];
+            }
+            else if ([dic[@"state"] isEqualToString:@"00"]) {
+                UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"错误" message:@"手机号已存在" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+                [alert show];
+            }
+            else if ([dic[@"state"] isEqualToString:@"01"]) {
+                UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"错误" message:@"用户名已存在" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+                [alert show];
+            }
+            else if ([dic[@"state"] isEqualToString:@"11"]) {
+                DetailTabBarViewController *tabBarViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailTabBarController"];
+                [self presentViewController:tabBarViewController animated:YES completion:nil];
+;
+            }
+        }];
     }
     
 

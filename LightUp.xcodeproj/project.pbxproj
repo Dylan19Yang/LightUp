@@ -62,6 +62,10 @@
 		0E86D7491BB44EB800B1F158 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		0ECFD1791BB7E35A00E6B390 /* NetworkTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkTestViewController.h; sourceTree = "<group>"; };
 		0ECFD17A1BB7E35A00E6B390 /* NetworkTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkTestViewController.m; sourceTree = "<group>"; };
+		0ECFD17D1BB81ACC00E6B390 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		0ECFD17E1BB81ACC00E6B390 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		0ECFD1801BB828BA00E6B390 /* Region.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Region.h; sourceTree = "<group>"; };
+		0ECFD1811BB828BA00E6B390 /* Region.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Region.m; sourceTree = "<group>"; };
 		43297A19F674DE35F1005359 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		BEFAFEAC8FA27BC89033150D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F06FB972458B08027870A1DA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,6 +136,7 @@
 		0E0DA7FD1BB188040029808F /* LightUp */ = {
 			isa = PBXGroup;
 			children = (
+				0ECFD17C1BB81A9100E6B390 /* Model */,
 				0E86D73C1BB4404B00B1F158 /* Util */,
 				0E0DA8011BB188040029808F /* AppDelegate.h */,
 				0E0DA8021BB188040029808F /* AppDelegate.mm */,
@@ -195,6 +200,17 @@
 				F1FEE3B01BB66E3500D99A16 /* PhotoViewController.m */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		0ECFD17C1BB81A9100E6B390 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0ECFD17D1BB81ACC00E6B390 /* User.h */,
+				0ECFD17E1BB81ACC00E6B390 /* User.m */,
+				0ECFD1801BB828BA00E6B390 /* Region.h */,
+				0ECFD1811BB828BA00E6B390 /* Region.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		A61A37449CFFC6DDD8B125D4 /* Frameworks */ = {
@@ -371,6 +387,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ECFD1821BB828BA00E6B390 /* Region.m in Sources */,
+				0ECFD17F1BB81ACC00E6B390 /* User.m in Sources */,
 				F1FEE3A81BB6682700D99A16 /* ExploreViewController.m in Sources */,
 				F1FEE3AE1BB6685600D99A16 /* UserViewController.m in Sources */,
 				0E0DA8031BB188040029808F /* AppDelegate.mm in Sources */,
