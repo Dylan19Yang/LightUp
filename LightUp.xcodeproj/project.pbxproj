@@ -21,6 +21,8 @@
 		0E86D7461BB447E000B1F158 /* API.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E86D7451BB447E000B1F158 /* API.m */; };
 		0E86D74A1BB44EB800B1F158 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E86D7491BB44EB800B1F158 /* LoginViewController.m */; };
 		0ECFD17B1BB7E35A00E6B390 /* NetworkTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECFD17A1BB7E35A00E6B390 /* NetworkTestViewController.m */; };
+		0ECFD17F1BB81ACC00E6B390 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECFD17E1BB81ACC00E6B390 /* User.m */; };
+		0ECFD1821BB828BA00E6B390 /* Region.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECFD1811BB828BA00E6B390 /* Region.m */; };
 		CA9FB8C463523A5D4D3CB1A2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F06FB972458B08027870A1DA /* libPods.a */; };
 		F13F01A71BB7C3810023A429 /* BaiduMapAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F13F01A51BB7C3810023A429 /* BaiduMapAPI.framework */; };
 		F13F01A81BB7C3810023A429 /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F13F01A61BB7C3810023A429 /* mapapi.bundle */; };
@@ -184,7 +186,6 @@
 		0E86D7471BB44D0B00B1F158 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F127448D1BB8357900622534 /* UserDetailViewController */,
 				0E86D7481BB44EB800B1F158 /* LoginViewController.h */,
 				0E86D7491BB44EB800B1F158 /* LoginViewController.m */,
 				F1FB1AE81BB695E3004C488E /* RegisterViewController.h */,
@@ -196,8 +197,11 @@
 				F1FB1AEB1BB69E1A004C488E /* HomeTableView */,
 				F13F01AE1BB81A830023A429 /* ExploreViewController */,
 				F13F01B21BB820CA0023A429 /* LightupViewController */,
+				F127448D1BB8357900622534 /* UserDetailViewController */,
 				F1FEE3AF1BB66E3500D99A16 /* PhotoViewController.h */,
 				F1FEE3B01BB66E3500D99A16 /* PhotoViewController.m */,
+				F1FEE3A91BB6683F00D99A16 /* LightupViewController.h */,
+				F1FEE3AA1BB6683F00D99A16 /* LightupViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -263,8 +267,6 @@
 		F13F01B21BB820CA0023A429 /* LightupViewController */ = {
 			isa = PBXGroup;
 			children = (
-				F1FEE3A91BB6683F00D99A16 /* LightupViewController.h */,
-				F1FEE3AA1BB6683F00D99A16 /* LightupViewController.m */,
 			);
 			name = LightupViewController;
 			sourceTree = "<group>";

@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface UserViewController : UIViewController
-
+- (IBAction)editBtn:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *followBtn;
+@property (weak, nonatomic) IBOutlet UIImageView *userHeadImageView;
+@property (weak, nonatomic) IBOutlet UILabel *persentNumberLabel;
+@property (weak, nonatomic) IBOutlet UITableView *userInfoTableView;
+@property (nonatomic) BOOL isFollow;
 @end

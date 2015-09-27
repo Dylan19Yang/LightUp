@@ -36,22 +36,72 @@
                                     <rect key="frame" x="0.0" y="283" width="375" height="335"/>
                                 </variation>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCf-h9-QOU">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" backgroundImage="Follow">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="6" y="241" width="114" height="32"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNn-Om-JYr">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" backgroundImage="Edit">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="6" y="68" width="93" height="16"/>
+                                </variation>
+                                <connections>
+                                    <action selector="editBtn:" destination="Ak1-z6-ukr" eventType="touchUpInside" id="nH3-Ra-oCo"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="69%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIW-tJ-rl2">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="69"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="241" y="63" width="145" height="56"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo" translatesAutoresizingMaskIntoConstraints="NO" id="Qi5-N3-odQ">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="146" y="182" width="84" height="84"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Szq-vk-ox1"/>
                                 <exclude reference="l3u-6H-6h6"/>
+                                <exclude reference="HCf-h9-QOU"/>
+                                <exclude reference="LNn-Om-JYr"/>
+                                <exclude reference="RIW-tJ-rl2"/>
+                                <exclude reference="Qi5-N3-odQ"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="Szq-vk-ox1"/>
                                 <include reference="l3u-6H-6h6"/>
+                                <include reference="HCf-h9-QOU"/>
+                                <include reference="LNn-Om-JYr"/>
+                                <include reference="RIW-tJ-rl2"/>
+                                <include reference="Qi5-N3-odQ"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="niD-CZ-ibt"/>
+                    <connections>
+                        <outlet property="followBtn" destination="HCf-h9-QOU" id="5PO-5Y-lcK"/>
+                        <outlet property="persentNumberLabel" destination="RIW-tJ-rl2" id="m53-rm-hgb"/>
+                        <outlet property="userHeadImageView" destination="Qi5-N3-odQ" id="6rY-vB-vkZ"/>
+                        <outlet property="userInfoTableView" destination="l3u-6H-6h6" id="Kks-JF-lzc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZmG-3a-zut" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1032,10 +1082,12 @@
         <image name="Bg_userDetail" width="375" height="667"/>
         <image name="Bt_Signin" width="542" height="109"/>
         <image name="Bt_Signup" width="542" height="109"/>
+        <image name="Edit" width="93" height="16"/>
         <image name="Explore" width="62" height="48"/>
         <image name="ExploreOn" width="62" height="48"/>
         <image name="Female" width="116" height="115"/>
         <image name="Finish" width="270" height="54"/>
+        <image name="Follow" width="114" height="32"/>
         <image name="HomeBar" width="62" height="48"/>
         <image name="HomeBarOn" width="62" height="48"/>
         <image name="Lightup" width="62" height="48"/>
