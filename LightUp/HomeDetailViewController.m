@@ -18,7 +18,8 @@
     [super viewDidLoad];
     self.HomeTableView.delegate = self;
     self.HomeTableView.dataSource = self;
-
+    //self.edgesForExtendedLayout = UIRectEdgeNone;
+    self.automaticallyAdjustsScrollViewInsets = NO; //必须要加上这句话，不然上面会有留白
     //设置导航条样式
     //默认的时白色半透明（有点灰的感觉），UIBarStyleBlack,UIBarStyleBlackTranslucent,UIBarStyleBlackOpaque都是黑色半透明，其实它们有的时不透明有的时透明有的时半透明，但不知为何无效果
     self.navigationController.navigationBar.barStyle=UIBarStyleDefault;
@@ -64,12 +65,12 @@
     //还可以initWithImage初始化成图片
     //还可以自定义，可以是任意一个UIView
     //UIBarButtonItem *barBtn2=[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemCamera target:self action:@selector(UsersInfo)];
-    UIBarButtonItem *barBtn3=[[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"Users.png"] style:UIBarButtonItemStylePlain target:self action:@selector(UsersInfo)];
+    //UIBarButtonItem *barBtn3=[[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"Users.png"] style:UIBarButtonItemStylePlain target:self action:@selector(UsersInfo)];
     //UIView *view4=[[UIView alloc]initWithFrame:CGRectMake(10, 10, 20, 20)];
     //view4.backgroundColor=[UIColor blackColor];
     //UIBarButtonItem *barBtn4=[[UIBarButtonItem alloc]initWithCustomView:view4];
-    NSArray *arr1=[[NSArray alloc]initWithObjects:barBtn3, nil];
-    self.navigationItem.rightBarButtonItems=arr1;
+    //NSArray *arr1=[[NSArray alloc]initWithObjects:barBtn3, nil];
+    //self.navigationItem.rightBarButtonItems=arr1;
     
 }
 
@@ -94,37 +95,12 @@
     return 3;
 }
 
-//Height of each rows
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return  784;
-}
-
-//Height of each sections
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
-{
-    return 0;
-}
-
-//Title of each header
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
-{
-    return nil;
-}
-
 
 //Cell detail
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *cellIdetify = @"HomeTableViewCell";
-    BOOL nibsRegistered = NO;
-    if (!nibsRegistered) {
-        UINib *nib = [UINib nibWithNibName:@"HomeTableViewCell" bundle:nil];
-        [tableView registerNib:nib forCellReuseIdentifier:cellIdetify];
-        nibsRegistered = YES;
-    }
     
-    HomeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdetify];
+    HomeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeTableViewCell" forIndexPath:indexPath];
     
 //    if(cell == nil)
 //    {
@@ -145,4 +121,7 @@
 }
 */
 
+- (IBAction)navigationItemBtn:(id)sender {
+    NSLog(@"hahahahahaha");
+}
 @end

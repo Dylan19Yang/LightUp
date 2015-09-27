@@ -23,9 +23,9 @@
 		CA9FB8C463523A5D4D3CB1A2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F06FB972458B08027870A1DA /* libPods.a */; };
 		F13F01A71BB7C3810023A429 /* BaiduMapAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F13F01A51BB7C3810023A429 /* BaiduMapAPI.framework */; };
 		F13F01A81BB7C3810023A429 /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F13F01A61BB7C3810023A429 /* mapapi.bundle */; };
+		F13F01AA1BB7C7C70023A429 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F13F01A91BB7C7C70023A429 /* Launch Screen.xib */; };
 		F1FB1AEA1BB695E3004C488E /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FB1AE91BB695E3004C488E /* RegisterViewController.m */; };
 		F1FB1AEF1BB69E7D004C488E /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FB1AED1BB69E7D004C488E /* HomeTableViewCell.m */; };
-		F1FB1AF01BB69E7D004C488E /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1FB1AEE1BB69E7D004C488E /* HomeTableViewCell.xib */; };
 		F1FB1AF61BB6A2EC004C488E /* HomeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FB1AF51BB6A2EC004C488E /* HomeDetailViewController.m */; };
 		F1FEE39F1BB662A800D99A16 /* DetailTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FEE39E1BB662A800D99A16 /* DetailTabBarViewController.m */; };
 		F1FEE3A51BB667AA00D99A16 /* HomeNavgationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FEE3A41BB667AA00D99A16 /* HomeNavgationViewController.m */; };
@@ -62,11 +62,11 @@
 		F06FB972458B08027870A1DA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F13F01A51BB7C3810023A429 /* BaiduMapAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI.framework; sourceTree = "<group>"; };
 		F13F01A61BB7C3810023A429 /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = mapapi.bundle; sourceTree = "<group>"; };
+		F13F01A91BB7C7C70023A429 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 		F1FB1AE81BB695E3004C488E /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		F1FB1AE91BB695E3004C488E /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		F1FB1AEC1BB69E7D004C488E /* HomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
 		F1FB1AED1BB69E7D004C488E /* HomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
-		F1FB1AEE1BB69E7D004C488E /* HomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		F1FB1AF41BB6A2EC004C488E /* HomeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeDetailViewController.h; sourceTree = "<group>"; };
 		F1FB1AF51BB6A2EC004C488E /* HomeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeDetailViewController.m; sourceTree = "<group>"; };
 		F1FEE39D1BB662A800D99A16 /* DetailTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTabBarViewController.h; sourceTree = "<group>"; };
@@ -127,6 +127,7 @@
 				0E0DA8011BB188040029808F /* AppDelegate.h */,
 				0E0DA8021BB188040029808F /* AppDelegate.mm */,
 				0E0DA8071BB188040029808F /* Main.storyboard */,
+				F13F01A91BB7C7C70023A429 /* Launch Screen.xib */,
 				0E0DA80A1BB188040029808F /* Assets.xcassets */,
 				0E0DA80F1BB188040029808F /* Info.plist */,
 				0E0DA7FE1BB188040029808F /* Supporting Files */,
@@ -169,6 +170,8 @@
 			children = (
 				0E86D7481BB44EB800B1F158 /* LoginViewController.h */,
 				0E86D7491BB44EB800B1F158 /* LoginViewController.m */,
+				F1FB1AE81BB695E3004C488E /* RegisterViewController.h */,
+				F1FB1AE91BB695E3004C488E /* RegisterViewController.m */,
 				F1FEE39D1BB662A800D99A16 /* DetailTabBarViewController.h */,
 				F1FEE39E1BB662A800D99A16 /* DetailTabBarViewController.m */,
 				F1FEE3A31BB667AA00D99A16 /* HomeNavgationViewController.h */,
@@ -182,8 +185,6 @@
 				F1FEE3AA1BB6683F00D99A16 /* LightupViewController.m */,
 				F1FEE3AC1BB6685600D99A16 /* UserViewController.h */,
 				F1FEE3AD1BB6685600D99A16 /* UserViewController.m */,
-				F1FB1AE81BB695E3004C488E /* RegisterViewController.h */,
-				F1FB1AE91BB695E3004C488E /* RegisterViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -218,7 +219,6 @@
 			children = (
 				F1FB1AEC1BB69E7D004C488E /* HomeTableViewCell.h */,
 				F1FB1AED1BB69E7D004C488E /* HomeTableViewCell.m */,
-				F1FB1AEE1BB69E7D004C488E /* HomeTableViewCell.xib */,
 				F1FB1AF41BB6A2EC004C488E /* HomeDetailViewController.h */,
 				F1FB1AF51BB6A2EC004C488E /* HomeDetailViewController.m */,
 			);
@@ -287,8 +287,8 @@
 			files = (
 				0E0DA80B1BB188040029808F /* Assets.xcassets in Resources */,
 				F13F01A81BB7C3810023A429 /* mapapi.bundle in Resources */,
-				F1FB1AF01BB69E7D004C488E /* HomeTableViewCell.xib in Resources */,
 				0E0DA8091BB188040029808F /* Main.storyboard in Resources */,
+				F13F01AA1BB7C7C70023A429 /* Launch Screen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,5 +10,6 @@
 
 @interface HomeDetailViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *HomeTableView;
+- (IBAction)navigationItemBtn:(id)sender;
 
 @end

@@ -16,6 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.mapScrollView.delegate = self;
+    self.mapScrollView.contentSize = CGSizeMake(375, 900);
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:255/255.0 green:204/255.0 blue:0/255.0 alpha:1/255.0];
     // Do any additional setup after loading the view.
 }
 
