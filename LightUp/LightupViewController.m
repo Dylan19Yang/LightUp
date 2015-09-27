@@ -17,6 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:255/255.0 green:204/255.0 blue:0/255.0 alpha:1/255.0];
+    
+    [self.wholeBtn addTarget:self action:@selector(wholeBtnClickEvent) forControlEvents:UIControlEventTouchUpInside];
+    [self.urbanBtn addTarget:self action:@selector(urbanBtnClickEvent) forControlEvents:UIControlEventTouchUpInside];
     // Do any additional setup after loading the view.
 }
 
@@ -25,7 +28,21 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - ButtonEvent
 
+- (void) wholeBtnClickEvent
+{
+    [self.wholeBtn setBackgroundImage:[UIImage imageNamed:@"Whole_on"] forState:UIControlStateNormal];
+    self.bgImageView.image = [UIImage imageNamed:@"Bg_shanghai"];
+    [self.urbanBtn setBackgroundImage:[UIImage imageNamed:@"Urban_off"] forState:UIControlStateNormal];
+}
+
+- (void) urbanBtnClickEvent
+{
+    [self.urbanBtn setBackgroundImage:[UIImage imageNamed:@"Urban_on"] forState:UIControlStateNormal];
+    self.bgImageView.image = [UIImage imageNamed:@"Bg_city"];
+    [self.wholeBtn setBackgroundImage:[UIImage imageNamed:@"Whole_off"] forState:UIControlStateNormal];
+}
 /*
 #pragma mark - Navigation
 

@@ -20,11 +20,13 @@
 		0E86D7411BB442A100B1F158 /* HttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E86D7401BB442A100B1F158 /* HttpClient.m */; };
 		0E86D7461BB447E000B1F158 /* API.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E86D7451BB447E000B1F158 /* API.m */; };
 		0E86D74A1BB44EB800B1F158 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E86D7491BB44EB800B1F158 /* LoginViewController.m */; };
-		0ECFD17B1BB7E35A00E6B390 /* NetworkTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECFD17A1BB7E35A00E6B390 /* NetworkTestViewController.m */; settings = {ASSET_TAGS = (); }; };
+		0ECFD17B1BB7E35A00E6B390 /* NetworkTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECFD17A1BB7E35A00E6B390 /* NetworkTestViewController.m */; };
 		CA9FB8C463523A5D4D3CB1A2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F06FB972458B08027870A1DA /* libPods.a */; };
 		F13F01A71BB7C3810023A429 /* BaiduMapAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F13F01A51BB7C3810023A429 /* BaiduMapAPI.framework */; };
 		F13F01A81BB7C3810023A429 /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F13F01A61BB7C3810023A429 /* mapapi.bundle */; };
 		F13F01AA1BB7C7C70023A429 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F13F01A91BB7C7C70023A429 /* Launch Screen.xib */; };
+		F13F01AD1BB81A240023A429 /* ExploreDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F13F01AC1BB81A240023A429 /* ExploreDetailViewController.m */; };
+		F13F01B11BB81AB40023A429 /* ExploreDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F13F01B01BB81AB40023A429 /* ExploreDetailTableViewCell.m */; };
 		F1FB1AEA1BB695E3004C488E /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FB1AE91BB695E3004C488E /* RegisterViewController.m */; };
 		F1FB1AEF1BB69E7D004C488E /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FB1AED1BB69E7D004C488E /* HomeTableViewCell.m */; };
 		F1FB1AF61BB6A2EC004C488E /* HomeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FB1AF51BB6A2EC004C488E /* HomeDetailViewController.m */; };
@@ -66,6 +68,10 @@
 		F13F01A51BB7C3810023A429 /* BaiduMapAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI.framework; sourceTree = "<group>"; };
 		F13F01A61BB7C3810023A429 /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = mapapi.bundle; sourceTree = "<group>"; };
 		F13F01A91BB7C7C70023A429 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
+		F13F01AB1BB81A240023A429 /* ExploreDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExploreDetailViewController.h; sourceTree = "<group>"; };
+		F13F01AC1BB81A240023A429 /* ExploreDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExploreDetailViewController.m; sourceTree = "<group>"; };
+		F13F01AF1BB81AB40023A429 /* ExploreDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExploreDetailTableViewCell.h; sourceTree = "<group>"; };
+		F13F01B01BB81AB40023A429 /* ExploreDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExploreDetailTableViewCell.m; sourceTree = "<group>"; };
 		F1FB1AE81BB695E3004C488E /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		F1FB1AE91BB695E3004C488E /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		F1FB1AEC1BB69E7D004C488E /* HomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
@@ -173,6 +179,7 @@
 		0E86D7471BB44D0B00B1F158 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F127448D1BB8357900622534 /* UserDetailViewController */,
 				0E86D7481BB44EB800B1F158 /* LoginViewController.h */,
 				0E86D7491BB44EB800B1F158 /* LoginViewController.m */,
 				F1FB1AE81BB695E3004C488E /* RegisterViewController.h */,
@@ -182,14 +189,10 @@
 				F1FEE3A31BB667AA00D99A16 /* HomeNavgationViewController.h */,
 				F1FEE3A41BB667AA00D99A16 /* HomeNavgationViewController.m */,
 				F1FB1AEB1BB69E1A004C488E /* HomeTableView */,
-				F1FEE3A61BB6682700D99A16 /* ExploreViewController.h */,
-				F1FEE3A71BB6682700D99A16 /* ExploreViewController.m */,
+				F13F01AE1BB81A830023A429 /* ExploreViewController */,
+				F13F01B21BB820CA0023A429 /* LightupViewController */,
 				F1FEE3AF1BB66E3500D99A16 /* PhotoViewController.h */,
 				F1FEE3B01BB66E3500D99A16 /* PhotoViewController.m */,
-				F1FEE3A91BB6683F00D99A16 /* LightupViewController.h */,
-				F1FEE3AA1BB6683F00D99A16 /* LightupViewController.m */,
-				F1FEE3AC1BB6685600D99A16 /* UserViewController.h */,
-				F1FEE3AD1BB6685600D99A16 /* UserViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -217,6 +220,37 @@
 				43297A19F674DE35F1005359 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F127448D1BB8357900622534 /* UserDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F1FEE3AC1BB6685600D99A16 /* UserViewController.h */,
+				F1FEE3AD1BB6685600D99A16 /* UserViewController.m */,
+			);
+			name = UserDetailViewController;
+			sourceTree = "<group>";
+		};
+		F13F01AE1BB81A830023A429 /* ExploreViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F1FEE3A61BB6682700D99A16 /* ExploreViewController.h */,
+				F1FEE3A71BB6682700D99A16 /* ExploreViewController.m */,
+				F13F01AB1BB81A240023A429 /* ExploreDetailViewController.h */,
+				F13F01AC1BB81A240023A429 /* ExploreDetailViewController.m */,
+				F13F01AF1BB81AB40023A429 /* ExploreDetailTableViewCell.h */,
+				F13F01B01BB81AB40023A429 /* ExploreDetailTableViewCell.m */,
+			);
+			name = ExploreViewController;
+			sourceTree = "<group>";
+		};
+		F13F01B21BB820CA0023A429 /* LightupViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F1FEE3A91BB6683F00D99A16 /* LightupViewController.h */,
+				F1FEE3AA1BB6683F00D99A16 /* LightupViewController.m */,
+			);
+			name = LightupViewController;
 			sourceTree = "<group>";
 		};
 		F1FB1AEB1BB69E1A004C488E /* HomeTableView */ = {
@@ -346,9 +380,11 @@
 				0ECFD17B1BB7E35A00E6B390 /* NetworkTestViewController.m in Sources */,
 				0E0DA8001BB188040029808F /* main.m in Sources */,
 				F1FB1AEA1BB695E3004C488E /* RegisterViewController.m in Sources */,
+				F13F01AD1BB81A240023A429 /* ExploreDetailViewController.m in Sources */,
 				0E86D7461BB447E000B1F158 /* API.m in Sources */,
 				F1FB1AEF1BB69E7D004C488E /* HomeTableViewCell.m in Sources */,
 				0E86D74A1BB44EB800B1F158 /* LoginViewController.m in Sources */,
+				F13F01B11BB81AB40023A429 /* ExploreDetailTableViewCell.m in Sources */,
 				F1FEE3B11BB66E3500D99A16 /* PhotoViewController.m in Sources */,
 				F1FB1AF61BB6A2EC004C488E /* HomeDetailViewController.m in Sources */,
 				F1FEE3A51BB667AA00D99A16 /* HomeNavgationViewController.m in Sources */,

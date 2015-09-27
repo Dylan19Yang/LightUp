@@ -25,10 +25,24 @@
 }
 
 - (IBAction)signIn:(id)sender {
+    if(self.userPhoneNumberTextField.text.length <= 0)
+    {
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"错误" message:@"手机号名不得为空" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        [alert show];
+    }
+    else if(self.userPassWordTextField.text.length <= 0)
+    {
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"错误" message:@"密码长度必须大于6位" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        [alert show];
+    }
+    else
+    {
+        //登陆接口
+        //[[HttpClient sharedClient] uploadPictureAPI:@"http://192.168.1.109:9993/test.php" params:nil image:[UIImage imageNamed:@"apple"] imageName:@"food_pic_file" fileName:@"1.png" andBlock:nil];
+        DetailTabBarViewController *tabBarViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailTabBarController"];
+        [self presentViewController:tabBarViewController animated:YES completion:nil];
+    }
     
-    //[[HttpClient sharedClient] uploadPictureAPI:@"http://192.168.1.109:9993/test.php" params:nil image:[UIImage imageNamed:@"apple"] imageName:@"food_pic_file" fileName:@"1.png" andBlock:nil];
-    DetailTabBarViewController *tabBarViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailTabBarController"];
-    [self presentViewController:tabBarViewController animated:YES completion:nil];
     
 }
 
