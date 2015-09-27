@@ -21,8 +21,8 @@
 		0E86D7461BB447E000B1F158 /* API.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E86D7451BB447E000B1F158 /* API.m */; };
 		0E86D74A1BB44EB800B1F158 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E86D7491BB44EB800B1F158 /* LoginViewController.m */; };
 		CA9FB8C463523A5D4D3CB1A2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F06FB972458B08027870A1DA /* libPods.a */; };
-		F13F01A31BB7C2100023A429 /* BaiduMapAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F13F01A11BB7C2100023A429 /* BaiduMapAPI.framework */; };
-		F13F01A41BB7C2100023A429 /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F13F01A21BB7C2100023A429 /* mapapi.bundle */; };
+		F13F01A71BB7C3810023A429 /* BaiduMapAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F13F01A51BB7C3810023A429 /* BaiduMapAPI.framework */; };
+		F13F01A81BB7C3810023A429 /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F13F01A61BB7C3810023A429 /* mapapi.bundle */; };
 		F1FB1AEA1BB695E3004C488E /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FB1AE91BB695E3004C488E /* RegisterViewController.m */; };
 		F1FB1AEF1BB69E7D004C488E /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FB1AED1BB69E7D004C488E /* HomeTableViewCell.m */; };
 		F1FB1AF01BB69E7D004C488E /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1FB1AEE1BB69E7D004C488E /* HomeTableViewCell.xib */; };
@@ -60,8 +60,8 @@
 		43297A19F674DE35F1005359 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		BEFAFEAC8FA27BC89033150D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F06FB972458B08027870A1DA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		F13F01A11BB7C2100023A429 /* BaiduMapAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI.framework; path = LightUp/FrameWork/BaiduMapAPI.framework; sourceTree = "<group>"; };
-		F13F01A21BB7C2100023A429 /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = mapapi.bundle; path = LightUp/FrameWork/mapapi.bundle; sourceTree = "<group>"; };
+		F13F01A51BB7C3810023A429 /* BaiduMapAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI.framework; sourceTree = "<group>"; };
+		F13F01A61BB7C3810023A429 /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = mapapi.bundle; sourceTree = "<group>"; };
 		F1FB1AE81BB695E3004C488E /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		F1FB1AE91BB695E3004C488E /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		F1FB1AEC1BB69E7D004C488E /* HomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 				0E86D7331BB43ACD00B1F158 /* OpenGLES.framework in Frameworks */,
 				0E86D7311BB43AC600B1F158 /* QuartzCore.framework in Frameworks */,
 				0E86D72F1BB43ABE00B1F158 /* CoreLocation.framework in Frameworks */,
-				F13F01A31BB7C2100023A429 /* BaiduMapAPI.framework in Frameworks */,
+				F13F01A71BB7C3810023A429 /* BaiduMapAPI.framework in Frameworks */,
 				CA9FB8C463523A5D4D3CB1A2 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,8 +191,8 @@
 		A61A37449CFFC6DDD8B125D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F13F01A11BB7C2100023A429 /* BaiduMapAPI.framework */,
-				F13F01A21BB7C2100023A429 /* mapapi.bundle */,
+				F13F01A51BB7C3810023A429 /* BaiduMapAPI.framework */,
+				F13F01A61BB7C3810023A429 /* mapapi.bundle */,
 				0E86D7381BB43AE500B1F158 /* Security.framework */,
 				0E86D7361BB43ADE00B1F158 /* CoreGraphics.framework */,
 				0E86D7341BB43AD400B1F158 /* SystemConfiguration.framework */,
@@ -286,7 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E0DA80B1BB188040029808F /* Assets.xcassets in Resources */,
-				F13F01A41BB7C2100023A429 /* mapapi.bundle in Resources */,
+				F13F01A81BB7C3810023A429 /* mapapi.bundle in Resources */,
 				F1FB1AF01BB69E7D004C488E /* HomeTableViewCell.xib in Resources */,
 				0E0DA8091BB188040029808F /* Main.storyboard in Resources */,
 			);
