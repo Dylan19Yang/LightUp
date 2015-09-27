@@ -7,8 +7,8 @@
 //
 
 #import "LoginViewController.h"
-#import "HttpClient.h"
 #import "DetailTabBarViewController.h"
+#import "API.h"
 
 @interface LoginViewController ()
 
@@ -37,10 +37,30 @@
     }
     else
     {
-        //登陆接口
-        //[[HttpClient sharedClient] uploadPictureAPI:@"http://192.168.1.109:9993/test.php" params:nil image:[UIImage imageNamed:@"apple"] imageName:@"food_pic_file" fileName:@"1.png" andBlock:nil];
-        DetailTabBarViewController *tabBarViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailTabBarController"];
-        [self presentViewController:tabBarViewController animated:YES completion:nil];
+        UIAlertView *waitAlert = [[UIAlertView alloc]initWithTitle:@"请稍候" message:nil delegate:self cancelButtonTitle:nil otherButtonTitles:nil, nil];
+        [waitAlert show];
+        
+        [[API sharedAPI] loginWithAccount:self.userPhoneNumberTextField.text password:self.userPassWordTextField.text andBLock:^(id responseObject, NSError *error) {
+            
+            [waitAlert dismissWithClickedButtonIndex:0 animated:YES];
+            NSDictionary *dic=(NSDictionary*)responseObject;
+            if (error) {
+                UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"错误" message:@"网络异常" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+                [alert show];
+            }
+            else if ([dic[@"state"] isEqualToString:@"00"]) {
+                UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"错误" message:@"手机号不存在" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+                [alert show];
+            }
+            else if ([dic[@"state"] isEqualToString:@"10"]) {
+                UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"错误" message:@"密码错误" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+                [alert show];
+            }
+            else if ([dic[@"state"] isEqualToString:@"11"]) {
+                DetailTabBarViewController *tabBarViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailTabBarController"];
+                [self presentViewController:tabBarViewController animated:YES completion:nil];
+            }
+        }];
     }
     
     

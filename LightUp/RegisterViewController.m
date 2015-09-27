@@ -133,7 +133,6 @@
             else if ([dic[@"state"] isEqualToString:@"11"]) {
                 DetailTabBarViewController *tabBarViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailTabBarController"];
                 [self presentViewController:tabBarViewController animated:YES completion:nil];
-;
             }
         }];
     }
