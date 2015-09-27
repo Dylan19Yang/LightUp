@@ -20,8 +20,9 @@
 		0E86D7411BB442A100B1F158 /* HttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E86D7401BB442A100B1F158 /* HttpClient.m */; };
 		0E86D7461BB447E000B1F158 /* API.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E86D7451BB447E000B1F158 /* API.m */; };
 		0E86D74A1BB44EB800B1F158 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E86D7491BB44EB800B1F158 /* LoginViewController.m */; };
-		0E8F5D631BB7933A00A50590 /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0E8F5D621BB7933A00A50590 /* mapapi.bundle */; settings = {ASSET_TAGS = (); }; };
-		0E8F5D651BB7934600A50590 /* BaiduMapAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E8F5D641BB7934600A50590 /* BaiduMapAPI.framework */; settings = {ASSET_TAGS = (); }; };
+		CA9FB8C463523A5D4D3CB1A2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F06FB972458B08027870A1DA /* libPods.a */; };
+		F13F01A31BB7C2100023A429 /* BaiduMapAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F13F01A11BB7C2100023A429 /* BaiduMapAPI.framework */; };
+		F13F01A41BB7C2100023A429 /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F13F01A21BB7C2100023A429 /* mapapi.bundle */; };
 		F1FB1AEA1BB695E3004C488E /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FB1AE91BB695E3004C488E /* RegisterViewController.m */; };
 		F1FB1AEF1BB69E7D004C488E /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FB1AED1BB69E7D004C488E /* HomeTableViewCell.m */; };
 		F1FB1AF01BB69E7D004C488E /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1FB1AEE1BB69E7D004C488E /* HomeTableViewCell.xib */; };
@@ -56,11 +57,11 @@
 		0E86D7451BB447E000B1F158 /* API.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = API.m; sourceTree = "<group>"; };
 		0E86D7481BB44EB800B1F158 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		0E86D7491BB44EB800B1F158 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		0E8F5D621BB7933A00A50590 /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = mapapi.bundle; path = FrameWork/mapapi.bundle; sourceTree = "<group>"; };
-		0E8F5D641BB7934600A50590 /* BaiduMapAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI.framework; path = LightUp/FrameWork/BaiduMapAPI.framework; sourceTree = "<group>"; };
 		43297A19F674DE35F1005359 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		BEFAFEAC8FA27BC89033150D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F06FB972458B08027870A1DA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F13F01A11BB7C2100023A429 /* BaiduMapAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI.framework; path = LightUp/FrameWork/BaiduMapAPI.framework; sourceTree = "<group>"; };
+		F13F01A21BB7C2100023A429 /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = mapapi.bundle; path = LightUp/FrameWork/mapapi.bundle; sourceTree = "<group>"; };
 		F1FB1AE81BB695E3004C488E /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		F1FB1AE91BB695E3004C488E /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		F1FB1AEC1BB69E7D004C488E /* HomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
@@ -91,9 +92,10 @@
 				0E86D7371BB43ADE00B1F158 /* CoreGraphics.framework in Frameworks */,
 				0E86D7351BB43AD400B1F158 /* SystemConfiguration.framework in Frameworks */,
 				0E86D7331BB43ACD00B1F158 /* OpenGLES.framework in Frameworks */,
-				0E8F5D651BB7934600A50590 /* BaiduMapAPI.framework in Frameworks */,
 				0E86D7311BB43AC600B1F158 /* QuartzCore.framework in Frameworks */,
 				0E86D72F1BB43ABE00B1F158 /* CoreLocation.framework in Frameworks */,
+				F13F01A31BB7C2100023A429 /* BaiduMapAPI.framework in Frameworks */,
+				CA9FB8C463523A5D4D3CB1A2 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +146,6 @@
 		0E86D73C1BB4404B00B1F158 /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				0E8F5D621BB7933A00A50590 /* mapapi.bundle */,
 				0E86D7471BB44D0B00B1F158 /* Controller */,
 				0E86D73D1BB440AB00B1F158 /* NetWork */,
 			);
@@ -190,7 +191,8 @@
 		A61A37449CFFC6DDD8B125D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0E8F5D641BB7934600A50590 /* BaiduMapAPI.framework */,
+				F13F01A11BB7C2100023A429 /* BaiduMapAPI.framework */,
+				F13F01A21BB7C2100023A429 /* mapapi.bundle */,
 				0E86D7381BB43AE500B1F158 /* Security.framework */,
 				0E86D7361BB43ADE00B1F158 /* CoreGraphics.framework */,
 				0E86D7341BB43AD400B1F158 /* SystemConfiguration.framework */,
@@ -283,8 +285,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E8F5D631BB7933A00A50590 /* mapapi.bundle in Resources */,
 				0E0DA80B1BB188040029808F /* Assets.xcassets in Resources */,
+				F13F01A41BB7C2100023A429 /* mapapi.bundle in Resources */,
 				F1FB1AF01BB69E7D004C488E /* HomeTableViewCell.xib in Resources */,
 				0E0DA8091BB188040029808F /* Main.storyboard in Resources */,
 			);
