@@ -7,6 +7,7 @@
 //
 
 #import "NetworkTestViewController.h"
+#import "API.h"
 
 @interface NetworkTestViewController ()
 
@@ -20,12 +21,18 @@
 }
 
 - (IBAction)login:(id)sender {
+    [[API sharedAPI] loginWithAccount:@"18605759818" password:@"123" andBLock:^(id responseObject, NSError *error) {
+        ;
+    }];
 }
 
 - (IBAction)reg:(id)sender {
 }
 
 - (IBAction)send:(id)sender {
+    [[API sharedAPI] sendMessageWithContent:@"321" identify:@"3" longitude:@"121.528296" latitude:@"31.274877" image:[UIImage imageNamed:@"apple"] fileName:@"123.jpg" andBlock:^(id responseObject, NSError *error) {
+        ;
+    }];
 }
 
 - (IBAction)info:(id)sender {

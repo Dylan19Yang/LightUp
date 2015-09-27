@@ -7,7 +7,7 @@
 //
 
 #import "HttpClient.h"
-#define TIMEOUTINTERVAL                 20.0
+#define TIMEOUTINTERVAL                 30.0
 @implementation HttpClient
 #pragma mark - Singleton
 
@@ -32,7 +32,7 @@
     self.requestSerializer = [AFHTTPRequestSerializer serializer];
     self.requestSerializer.HTTPShouldHandleCookies = NO;
     self.requestSerializer.timeoutInterval = TIMEOUTINTERVAL;
-    self.responseSerializer.acceptableContentTypes=[NSSet setWithObject:@"text/plain"];
+    self.responseSerializer.acceptableContentTypes=[NSSet setWithObjects:@"text/plain",@"text/html",nil];
     NSLog(@"=====================================");
     NSLog(@"%@",uri);
     NSLog(@"=====================================");
@@ -111,6 +111,9 @@
         NSData* data=responseObject;
         NSString *str=[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
         NSLog(@"Success: %@", str);
+        if (block) {
+            block(responseObject,nil);
+        }
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         NSLog(@"Error: %@", error);
     }];

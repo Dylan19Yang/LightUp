@@ -151,7 +151,7 @@
                                        andBlock:block];
 }
 
--(void)sendMessageUserId:(NSString*)identify
+-(void)editHeadShotWithUserId:(NSString*)identify
                    image:(UIImage*)image
                 fileName:(NSString*)fileName
                 andBlock:(ResponseBlock)block {

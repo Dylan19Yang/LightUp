@@ -10,7 +10,7 @@
 #ifndef NetworkConstants_h
 #define NetworkConstants_h
 
-#define ApiBaseUrl                              @"http://ip:0000/"
+#define ApiBaseUrl                              @"http://192.168.1.109:9993/"
 
 #define API_Login                               @"Login.php"
 #define API_Register                            @"Register.php"
