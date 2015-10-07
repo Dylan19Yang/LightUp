@@ -143,6 +143,7 @@
     cell.timeLabel.text=message.messageTime;
     [cell.userImage.imageView setImageWithURL:[NSURL URLWithString:message.headImageUrl]];
     [cell.messageImage.imageView setImageWithURL:[NSURL URLWithString:message.messageImageUrl]];
+    cell.myDelegate=self;
     return cell;
 }
 
