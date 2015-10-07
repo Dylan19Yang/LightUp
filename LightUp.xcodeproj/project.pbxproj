@@ -12,6 +12,9 @@
 		0E0DA8091BB188040029808F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E0DA8071BB188040029808F /* Main.storyboard */; };
 		0E0DA80B1BB188040029808F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E0DA80A1BB188040029808F /* Assets.xcassets */; };
 		0E1980F71BC4F4BB009B635B /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1980F61BC4F4BB009B635B /* Message.m */; settings = {ASSET_TAGS = (); }; };
+		0E1980F81BC5645A009B635B /* HomeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FB1AF51BB6A2EC004C488E /* HomeDetailViewController.m */; };
+		0E1980F91BC564E9009B635B /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECFD17E1BB81ACC00E6B390 /* User.m */; settings = {ASSET_TAGS = (); }; };
+		0E1980FA1BC564ED009B635B /* Region.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECFD1811BB828BA00E6B390 /* Region.m */; settings = {ASSET_TAGS = (); }; };
 		0E86D72F1BB43ABE00B1F158 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E86D72E1BB43ABE00B1F158 /* CoreLocation.framework */; };
 		0E86D7311BB43AC600B1F158 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E86D7301BB43AC600B1F158 /* QuartzCore.framework */; };
 		0E86D7331BB43ACD00B1F158 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E86D7321BB43ACD00B1F158 /* OpenGLES.framework */; };
@@ -33,7 +36,6 @@
 		F14867CE1BC50B6A00BFF082 /* LightupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F14867CD1BC50B6A00BFF082 /* LightupViewController.m */; };
 		F1FB1AEA1BB695E3004C488E /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FB1AE91BB695E3004C488E /* RegisterViewController.m */; };
 		F1FB1AEF1BB69E7D004C488E /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FB1AED1BB69E7D004C488E /* HomeTableViewCell.m */; };
-		F1FB1AF61BB6A2EC004C488E /* HomeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FB1AF51BB6A2EC004C488E /* HomeDetailViewController.m */; };
 		F1FEE39F1BB662A800D99A16 /* DetailTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FEE39E1BB662A800D99A16 /* DetailTabBarViewController.m */; };
 		F1FEE3A51BB667AA00D99A16 /* HomeNavgationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FEE3A41BB667AA00D99A16 /* HomeNavgationViewController.m */; };
 		F1FEE3A81BB6682700D99A16 /* ExploreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FEE3A71BB6682700D99A16 /* ExploreViewController.m */; };
@@ -402,13 +404,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E1980F81BC5645A009B635B /* HomeDetailViewController.m in Sources */,
 				F1FEE3A81BB6682700D99A16 /* ExploreViewController.m in Sources */,
 				F14867CB1BC502F400BFF082 /* CommentTableViewCell.m in Sources */,
+				0E1980FA1BC564ED009B635B /* Region.m in Sources */,
 				F14867CE1BC50B6A00BFF082 /* LightupViewController.m in Sources */,
 				F1FEE3AE1BB6685600D99A16 /* UserViewController.m in Sources */,
 				0E0DA8031BB188040029808F /* AppDelegate.mm in Sources */,
 				F1FEE39F1BB662A800D99A16 /* DetailTabBarViewController.m in Sources */,
 				0E86D7411BB442A100B1F158 /* HttpClient.m in Sources */,
+				0E1980F91BC564E9009B635B /* User.m in Sources */,
 				0ECFD17B1BB7E35A00E6B390 /* NetworkTestViewController.m in Sources */,
 				0E0DA8001BB188040029808F /* main.m in Sources */,
 				F1FB1AEA1BB695E3004C488E /* RegisterViewController.m in Sources */,
@@ -420,7 +425,6 @@
 				F13F01B11BB81AB40023A429 /* ExploreDetailTableViewCell.m in Sources */,
 				0E1980F71BC4F4BB009B635B /* Message.m in Sources */,
 				F1FEE3B11BB66E3500D99A16 /* PhotoViewController.m in Sources */,
-				F1FB1AF61BB6A2EC004C488E /* HomeDetailViewController.m in Sources */,
 				F1FEE3A51BB667AA00D99A16 /* HomeNavgationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
