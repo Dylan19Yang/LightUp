@@ -7,9 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface HomeDetailViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+#import "HomeTableViewCell.h"
+@interface HomeDetailViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,CommentDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *HomeTableView;
+@property (weak, nonatomic) IBOutlet UIView *CommentView;
+@property (weak, nonatomic) IBOutlet UITextView *CommentTextView;
+
+
+@property (nonatomic) NSInteger currentRow;
+
+- (IBAction)SubmitCommentBtn:(id)sender;
+- (IBAction)CancelCommentBtn:(id)sender;
+
 - (IBAction)navigationItemBtn:(id)sender;
 
 @end

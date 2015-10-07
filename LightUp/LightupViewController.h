@@ -32,4 +32,23 @@
 @property (weak, nonatomic) IBOutlet UIImageView *qpImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *sjImageView;
 
+@property (weak, nonatomic) IBOutlet UIButton *bsBtn;
+@property (weak, nonatomic) IBOutlet UIButton *cmBtn;
+@property (weak, nonatomic) IBOutlet UIButton *pdBtn;
+@property (weak, nonatomic) IBOutlet UIButton *cnBtn;
+@property (weak, nonatomic) IBOutlet UIButton *xhBtn;
+@property (weak, nonatomic) IBOutlet UIButton *hpBtn;
+@property (weak, nonatomic) IBOutlet UIButton *jaBtn;
+@property (weak, nonatomic) IBOutlet UIButton *ptBtn;
+@property (weak, nonatomic) IBOutlet UIButton *zbBtn;
+@property (weak, nonatomic) IBOutlet UIButton *hkBtn;
+@property (weak, nonatomic) IBOutlet UIButton *ypBtn;
+@property (weak, nonatomic) IBOutlet UIButton *cqBtn;
+@property (weak, nonatomic) IBOutlet UIButton *fxBtn;
+@property (weak, nonatomic) IBOutlet UIButton *jdBtn;
+@property (weak, nonatomic) IBOutlet UIButton *jsBtn;
+@property (weak, nonatomic) IBOutlet UIButton *mhBtn;
+@property (weak, nonatomic) IBOutlet UIButton *qpBtn;
+@property (weak, nonatomic) IBOutlet UIButton *sjBtn;
+
 @end

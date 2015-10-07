@@ -11,6 +11,7 @@
 @implementation HomeTableViewCell
 
 - (void)awakeFromNib {
+    [self.CommentBtn addTarget:self action:@selector(showComment:) forControlEvents:UIControlEventTouchUpInside];
     // Initialization code
 }
 
@@ -18,6 +19,13 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+
+- (void)showComment:(id)sender
+{
+    NSLog(@"Click Btn");
+    //HomeTableViewCell *cell = (HomeTableViewCell *)[[sender superview] superview];
+    [self.myDelegate showCommentView:self.tag];
 }
 
 @end

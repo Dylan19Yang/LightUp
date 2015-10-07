@@ -7,7 +7,6 @@
 //
 
 #import "HomeDetailViewController.h"
-#import "HomeTableViewCell.h"
 #import "API.h"
 #import "User.h"
 #import "Message.h"
@@ -76,6 +75,8 @@
     //NSArray *arr1=[[NSArray alloc]initWithObjects:barBtn3, nil];
     //self.navigationItem.rightBarButtonItems=arr1;
     
+    
+    self.CommentView.hidden = YES;
 }
 
 -(void)viewWillAppear:(BOOL)animated {
@@ -145,7 +146,27 @@
     return cell;
 }
 
+
+
 - (IBAction)navigationItemBtn:(id)sender {
     NSLog(@"hahahahahaha");
 }
+
+#pragma mark - CommentMethod
+- (void)showCommentView:(NSInteger)cellRow
+{
+    self.CommentView.hidden = NO;
+    self.currentRow = cellRow;
+}
+
+- (IBAction)SubmitCommentBtn:(id)sender {
+    NSLog(@"Submmit!");
+}
+
+- (IBAction)CancelCommentBtn:(id)sender {
+    self.CommentTextView.text = NULL;
+    self.CommentView.hidden = YES;
+    NSLog(@"Cancel!");
+}
+
 @end
