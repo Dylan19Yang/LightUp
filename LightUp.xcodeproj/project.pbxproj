@@ -11,6 +11,7 @@
 		0E0DA8031BB188040029808F /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0E0DA8021BB188040029808F /* AppDelegate.mm */; };
 		0E0DA8091BB188040029808F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E0DA8071BB188040029808F /* Main.storyboard */; };
 		0E0DA80B1BB188040029808F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E0DA80A1BB188040029808F /* Assets.xcassets */; };
+		0E1980F71BC4F4BB009B635B /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1980F61BC4F4BB009B635B /* Message.m */; settings = {ASSET_TAGS = (); }; };
 		0E86D72F1BB43ABE00B1F158 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E86D72E1BB43ABE00B1F158 /* CoreLocation.framework */; };
 		0E86D7311BB43AC600B1F158 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E86D7301BB43AC600B1F158 /* QuartzCore.framework */; };
 		0E86D7331BB43ACD00B1F158 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E86D7321BB43ACD00B1F158 /* OpenGLES.framework */; };
@@ -45,6 +46,8 @@
 		0E0DA8081BB188040029808F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0E0DA80A1BB188040029808F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E0DA80F1BB188040029808F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E1980F51BC4F4BB009B635B /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		0E1980F61BC4F4BB009B635B /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
 		0E86D72E1BB43ABE00B1F158 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		0E86D7301BB43AC600B1F158 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0E86D7321BB43ACD00B1F158 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -206,6 +209,8 @@
 				0ECFD17E1BB81ACC00E6B390 /* User.m */,
 				0ECFD1801BB828BA00E6B390 /* Region.h */,
 				0ECFD1811BB828BA00E6B390 /* Region.m */,
+				0E1980F51BC4F4BB009B635B /* Message.h */,
+				0E1980F61BC4F4BB009B635B /* Message.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -395,6 +400,7 @@
 				F1FB1AEF1BB69E7D004C488E /* HomeTableViewCell.m in Sources */,
 				0E86D74A1BB44EB800B1F158 /* LoginViewController.m in Sources */,
 				F13F01B11BB81AB40023A429 /* ExploreDetailTableViewCell.m in Sources */,
+				0E1980F71BC4F4BB009B635B /* Message.m in Sources */,
 				F1FEE3B11BB66E3500D99A16 /* PhotoViewController.m in Sources */,
 				F1FB1AF61BB6A2EC004C488E /* HomeDetailViewController.m in Sources */,
 				F1FEE3A51BB667AA00D99A16 /* HomeNavgationViewController.m in Sources */,

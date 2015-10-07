@@ -10,8 +10,10 @@
 #import "HomeTableViewCell.h"
 #import "API.h"
 #import "User.h"
+#import "Message.h"
+#import <UIImageView+AFNetworking.h>
 @interface HomeDetailViewController ()
-
+@property (nonatomic, strong) NSMutableArray *source;
 @end
 
 @implementation HomeDetailViewController
@@ -77,20 +79,39 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated {
+    self.source=[NSMutableArray array];
     [super viewWillAppear:animated];
-//    UIAlertView *waitView=[[UIAlertView alloc] initWithTitle:@"请稍候" message:nil delegate:nil cancelButtonTitle:nil otherButtonTitles:nil];
-//    [waitView show];
-//    [[API sharedAPI] allMessagesWithUserId:[User sharedInstance].userId andBLock:^(id responseObject, NSError *error) {
-//        [waitView dismissWithClickedButtonIndex:0 animated:YES];
-//        NSArray *array=(NSArray*)responseObject;
-//        if (error) {
-//            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"错误" message:@"网络异常" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
-//            [alert show];
-//        }
-//        else {
-//            
-//        }
-//    }];
+    UIAlertView *waitView=[[UIAlertView alloc] initWithTitle:@"请稍候" message:nil delegate:nil cancelButtonTitle:nil otherButtonTitles:nil];
+    [waitView show];
+    [[API sharedAPI] allMessagesWithUserId:[User sharedInstance].userId andBLock:^(id responseObject, NSError *error) {
+        [waitView dismissWithClickedButtonIndex:0 animated:YES];
+        NSArray *array=(NSArray*)responseObject;
+        if (error) {
+            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"错误" message:@"网络异常" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+            [alert show];
+        }
+        else {
+            for (NSDictionary *dic in array) {
+                NSArray *messageArray=dic[@"All_messages"];
+                for (NSDictionary *messageDic in messageArray) {
+                    Message *message;
+                    message.userId=dic[@"User_id"];
+                    message.userName=dic[@"User_name"];
+                    message.headImageUrl=dic[@"User_headshot"];
+                    message.percentage=dic[@"User_achievement" ];
+                    message.messageId=messageDic[@"Message_id" ];
+                    message.messageContent=messageDic[@"Message_content"];
+                    message.messageImageUrl=messageDic[@"Message_image"];
+                    message.regionId=messageDic[@"Region_id"];
+                    message.messageTime=messageDic[@"Message_time"];
+                    message.messageLike=messageDic[@"Message_like"];
+                    message.state=messageDic[@"state"];
+                    [self.source addObject:message];
+                }
+            }
+            [self.HomeTableView reloadData];
+        }
+    }];
     
 }
 
@@ -101,27 +122,26 @@
 
 #pragma mark - TableView
 
-//Number of sections
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 1;
 }
 
-//Number of rows
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    //这里需要获取服务器上的总数
-    
-    return 3;
+
+    return [self.source count];
 }
 
-
-//Cell detail
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
     HomeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeTableViewCell" forIndexPath:indexPath];
-        
+    Message *message=self.source[indexPath.row];
+    cell.userNameLabel.text=message.userName;
+    cell.percentLabel.text=message.percentage;
+    cell.timeLabel.text=message.messageTime;
+    [cell.userImage.imageView setImageWithURL:[NSURL URLWithString:message.headImageUrl]];
+    [cell.messageImage.imageView setImageWithURL:[NSURL URLWithString:message.messageImageUrl]];
     return cell;
 }
 
