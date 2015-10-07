@@ -27,6 +27,8 @@
 		F13F01AA1BB7C7C70023A429 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F13F01A91BB7C7C70023A429 /* Launch Screen.xib */; };
 		F13F01AD1BB81A240023A429 /* ExploreDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F13F01AC1BB81A240023A429 /* ExploreDetailViewController.m */; };
 		F13F01B11BB81AB40023A429 /* ExploreDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F13F01B01BB81AB40023A429 /* ExploreDetailTableViewCell.m */; };
+		F14867C81BC4FAA900BFF082 /* SingleHomeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F14867C71BC4FAA900BFF082 /* SingleHomeDetailViewController.m */; };
+		F14867CB1BC502F400BFF082 /* CommentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F14867CA1BC502F400BFF082 /* CommentTableViewCell.m */; };
 		F1FB1AEA1BB695E3004C488E /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FB1AE91BB695E3004C488E /* RegisterViewController.m */; };
 		F1FB1AEF1BB69E7D004C488E /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FB1AED1BB69E7D004C488E /* HomeTableViewCell.m */; };
 		F1FB1AF61BB6A2EC004C488E /* HomeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FB1AF51BB6A2EC004C488E /* HomeDetailViewController.m */; };
@@ -75,6 +77,10 @@
 		F13F01AC1BB81A240023A429 /* ExploreDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExploreDetailViewController.m; sourceTree = "<group>"; };
 		F13F01AF1BB81AB40023A429 /* ExploreDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExploreDetailTableViewCell.h; sourceTree = "<group>"; };
 		F13F01B01BB81AB40023A429 /* ExploreDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExploreDetailTableViewCell.m; sourceTree = "<group>"; };
+		F14867C61BC4FAA900BFF082 /* SingleHomeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleHomeDetailViewController.h; sourceTree = "<group>"; };
+		F14867C71BC4FAA900BFF082 /* SingleHomeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleHomeDetailViewController.m; sourceTree = "<group>"; };
+		F14867C91BC502F400BFF082 /* CommentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentTableViewCell.h; sourceTree = "<group>"; };
+		F14867CA1BC502F400BFF082 /* CommentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentTableViewCell.m; sourceTree = "<group>"; };
 		F1FB1AE81BB695E3004C488E /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		F1FB1AE91BB695E3004C488E /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		F1FB1AEC1BB69E7D004C488E /* HomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
@@ -271,6 +277,10 @@
 				F1FB1AED1BB69E7D004C488E /* HomeTableViewCell.m */,
 				F1FB1AF41BB6A2EC004C488E /* HomeDetailViewController.h */,
 				F1FB1AF51BB6A2EC004C488E /* HomeDetailViewController.m */,
+				F14867C61BC4FAA900BFF082 /* SingleHomeDetailViewController.h */,
+				F14867C71BC4FAA900BFF082 /* SingleHomeDetailViewController.m */,
+				F14867C91BC502F400BFF082 /* CommentTableViewCell.h */,
+				F14867CA1BC502F400BFF082 /* CommentTableViewCell.m */,
 			);
 			name = HomeTableView;
 			sourceTree = "<group>";
@@ -383,6 +393,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1FEE3A81BB6682700D99A16 /* ExploreViewController.m in Sources */,
+				F14867CB1BC502F400BFF082 /* CommentTableViewCell.m in Sources */,
 				F1FEE3AE1BB6685600D99A16 /* UserViewController.m in Sources */,
 				0E0DA8031BB188040029808F /* AppDelegate.mm in Sources */,
 				F1FEE39F1BB662A800D99A16 /* DetailTabBarViewController.m in Sources */,
@@ -391,6 +402,7 @@
 				0E0DA8001BB188040029808F /* main.m in Sources */,
 				F1FB1AEA1BB695E3004C488E /* RegisterViewController.m in Sources */,
 				F13F01AD1BB81A240023A429 /* ExploreDetailViewController.m in Sources */,
+				F14867C81BC4FAA900BFF082 /* SingleHomeDetailViewController.m in Sources */,
 				0E86D7461BB447E000B1F158 /* API.m in Sources */,
 				F1FB1AEF1BB69E7D004C488E /* HomeTableViewCell.m in Sources */,
 				0E86D74A1BB44EB800B1F158 /* LoginViewController.m in Sources */,
