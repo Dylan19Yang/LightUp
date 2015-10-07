@@ -29,6 +29,7 @@
 		F13F01B11BB81AB40023A429 /* ExploreDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F13F01B01BB81AB40023A429 /* ExploreDetailTableViewCell.m */; };
 		F14867C81BC4FAA900BFF082 /* SingleHomeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F14867C71BC4FAA900BFF082 /* SingleHomeDetailViewController.m */; };
 		F14867CB1BC502F400BFF082 /* CommentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F14867CA1BC502F400BFF082 /* CommentTableViewCell.m */; };
+		F14867CE1BC50B6A00BFF082 /* LightupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F14867CD1BC50B6A00BFF082 /* LightupViewController.m */; };
 		F1FB1AEA1BB695E3004C488E /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FB1AE91BB695E3004C488E /* RegisterViewController.m */; };
 		F1FB1AEF1BB69E7D004C488E /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FB1AED1BB69E7D004C488E /* HomeTableViewCell.m */; };
 		F1FB1AF61BB6A2EC004C488E /* HomeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FB1AF51BB6A2EC004C488E /* HomeDetailViewController.m */; };
@@ -81,6 +82,8 @@
 		F14867C71BC4FAA900BFF082 /* SingleHomeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleHomeDetailViewController.m; sourceTree = "<group>"; };
 		F14867C91BC502F400BFF082 /* CommentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentTableViewCell.h; sourceTree = "<group>"; };
 		F14867CA1BC502F400BFF082 /* CommentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentTableViewCell.m; sourceTree = "<group>"; };
+		F14867CC1BC50B6A00BFF082 /* LightupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightupViewController.h; sourceTree = "<group>"; };
+		F14867CD1BC50B6A00BFF082 /* LightupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightupViewController.m; sourceTree = "<group>"; };
 		F1FB1AE81BB695E3004C488E /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		F1FB1AE91BB695E3004C488E /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		F1FB1AEC1BB69E7D004C488E /* HomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
@@ -266,6 +269,8 @@
 		F13F01B21BB820CA0023A429 /* LightupViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F14867CC1BC50B6A00BFF082 /* LightupViewController.h */,
+				F14867CD1BC50B6A00BFF082 /* LightupViewController.m */,
 			);
 			name = LightupViewController;
 			sourceTree = "<group>";
@@ -394,6 +399,7 @@
 			files = (
 				F1FEE3A81BB6682700D99A16 /* ExploreViewController.m in Sources */,
 				F14867CB1BC502F400BFF082 /* CommentTableViewCell.m in Sources */,
+				F14867CE1BC50B6A00BFF082 /* LightupViewController.m in Sources */,
 				F1FEE3AE1BB6685600D99A16 /* UserViewController.m in Sources */,
 				0E0DA8031BB188040029808F /* AppDelegate.mm in Sources */,
 				F1FEE39F1BB662A800D99A16 /* DetailTabBarViewController.m in Sources */,

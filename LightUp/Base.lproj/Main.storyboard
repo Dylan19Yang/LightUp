@@ -157,6 +157,16 @@
                                     <rect key="frame" x="144" y="249" width="76" height="95"/>
                                 </variation>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdO-km-Vtx" userLabel="bsBtn">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="宝山">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="163" y="281" width="46" height="30"/>
+                                </variation>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cm" translatesAutoresizingMaskIntoConstraints="NO" id="vP5-1a-6Dq">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <animations/>
@@ -164,6 +174,16 @@
                                     <rect key="frame" x="101" y="103" width="276" height="231"/>
                                 </variation>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drn-6N-U9Z" userLabel="cmBtn">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="崇明">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="216" y="180" width="46" height="30"/>
+                                </variation>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pd" translatesAutoresizingMaskIntoConstraints="NO" id="5Hq-qn-eoU">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <animations/>
@@ -171,6 +191,16 @@
                                     <rect key="frame" x="200" y="296" width="176" height="217"/>
                                 </variation>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ipy-k2-PWr" userLabel="pdBtn">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="浦东">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="291" y="420" width="46" height="30"/>
+                                </variation>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cn" translatesAutoresizingMaskIntoConstraints="NO" id="NHj-Y0-7JB">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <animations/>
@@ -178,6 +208,16 @@
                                     <rect key="frame" x="19" y="332" width="161" height="105"/>
                                 </variation>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eiC-CG-xL9" userLabel="cnBtn">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="长宁">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="41" y="372" width="46" height="30"/>
+                                </variation>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xh" translatesAutoresizingMaskIntoConstraints="NO" id="AxT-wH-eor">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <animations/>
@@ -185,6 +225,16 @@
                                     <rect key="frame" x="121" y="371" width="114" height="178"/>
                                 </variation>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFb-fs-dHS" userLabel="xhBtn">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="徐汇">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="146" y="444" width="46" height="30"/>
+                                </variation>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hp" translatesAutoresizingMaskIntoConstraints="NO" id="prO-v4-gdd">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <animations/>
@@ -192,6 +242,16 @@
                                     <rect key="frame" x="206" y="330" width="69" height="89"/>
                                 </variation>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xq-9K-epU" userLabel="hpBtn">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="黄浦">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="216" y="358" width="46" height="30"/>
+                                </variation>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ja" translatesAutoresizingMaskIntoConstraints="NO" id="zKs-Ue-iZ6">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <animations/>
@@ -199,6 +259,16 @@
                                     <rect key="frame" x="158" y="326" width="62" height="51"/>
                                 </variation>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dbl-LN-U7g" userLabel="jaBtn">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="静安">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="164" y="341" width="46" height="30"/>
+                                </variation>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pt" translatesAutoresizingMaskIntoConstraints="NO" id="5oZ-Ls-yrL">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <animations/>
@@ -206,6 +276,16 @@
                                     <rect key="frame" x="13" y="232" width="184" height="140"/>
                                 </variation>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GmS-J7-Ca1" userLabel="ptBtn">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="普陀">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="94" y="291" width="46" height="30"/>
+                                </variation>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zb" translatesAutoresizingMaskIntoConstraints="NO" id="uHu-p4-cgh">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <animations/>
@@ -213,6 +293,16 @@
                                     <rect key="frame" x="157" y="201" width="85" height="134"/>
                                 </variation>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="guk-rL-zRL" userLabel="zbBtn">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="闸北">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="164" y="245" width="46" height="30"/>
+                                </variation>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hk" translatesAutoresizingMaskIntoConstraints="NO" id="MQq-rN-uaM">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <animations/>
@@ -220,6 +310,16 @@
                                     <rect key="frame" x="214" y="202" width="78" height="130"/>
                                 </variation>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubO-nK-mJe" userLabel="hkBtn">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="虹口">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="230" y="276" width="46" height="30"/>
+                                </variation>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yp" translatesAutoresizingMaskIntoConstraints="NO" id="TzZ-q8-7y6">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <animations/>
@@ -227,6 +327,16 @@
                                     <rect key="frame" x="244" y="153" width="116" height="165"/>
                                 </variation>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afO-vx-Z4h" userLabel="ypBtn">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="杨浦">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="284" y="226" width="46" height="30"/>
+                                </variation>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cq" translatesAutoresizingMaskIntoConstraints="NO" id="dZe-iV-KpQ">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <animations/>
@@ -234,6 +344,16 @@
                                     <rect key="frame" x="152" y="311" width="84" height="96"/>
                                 </variation>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qm-hf-UBd" userLabel="cqBtn">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="城区">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="166" y="346" width="46" height="30"/>
+                                </variation>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fx" translatesAutoresizingMaskIntoConstraints="NO" id="3pG-ei-cIv">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <animations/>
@@ -241,6 +361,16 @@
                                     <rect key="frame" x="166" y="447" width="144" height="92"/>
                                 </variation>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxe-1E-Gim" userLabel="fxBtn">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="奉贤">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="215" y="470" width="46" height="30"/>
+                                </variation>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jd" translatesAutoresizingMaskIntoConstraints="NO" id="Wdv-qZ-t6t">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <animations/>
@@ -248,6 +378,16 @@
                                     <rect key="frame" x="79" y="255" width="91" height="106"/>
                                 </variation>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9te-fU-sKs" userLabel="jdBtn">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="嘉定">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="103" y="293" width="46" height="30"/>
+                                </variation>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="js" translatesAutoresizingMaskIntoConstraints="NO" id="mZa-Jw-qhT">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <animations/>
@@ -255,6 +395,16 @@
                                     <rect key="frame" x="38" y="473" width="162" height="101"/>
                                 </variation>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xUt-5B-hjE" userLabel="jsBtn">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="金山">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="107" y="500" width="46" height="30"/>
+                                </variation>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mh" translatesAutoresizingMaskIntoConstraints="NO" id="8Xc-VJ-ccu">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <animations/>
@@ -262,6 +412,16 @@
                                     <rect key="frame" x="130" y="349" width="113" height="110"/>
                                 </variation>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yjy-v7-I2B" userLabel="mhBtn">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="闵行">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="172" y="413" width="46" height="30"/>
+                                </variation>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qp" translatesAutoresizingMaskIntoConstraints="NO" id="wn5-NH-Xym">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <animations/>
@@ -269,6 +429,16 @@
                                     <rect key="frame" x="0.0" y="335" width="154" height="139"/>
                                 </variation>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2M-UG-zLD" userLabel="qpBtn">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="青浦">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="15" y="406" width="46" height="30"/>
+                                </variation>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sj" translatesAutoresizingMaskIntoConstraints="NO" id="o8L-DY-cKH">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <animations/>
@@ -276,6 +446,16 @@
                                     <rect key="frame" x="54" y="382" width="117" height="111"/>
                                 </variation>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gaE-H2-qQE" userLabel="sjBtn">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="松江">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="100" y="423" width="46" height="30"/>
+                                </variation>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -285,23 +465,41 @@
                                 <exclude reference="UGn-TH-vTF"/>
                                 <exclude reference="Mgj-AB-TwB"/>
                                 <exclude reference="7Mp-fu-tN2"/>
+                                <exclude reference="bdO-km-Vtx"/>
                                 <exclude reference="vP5-1a-6Dq"/>
+                                <exclude reference="drn-6N-U9Z"/>
                                 <exclude reference="5Hq-qn-eoU"/>
+                                <exclude reference="Ipy-k2-PWr"/>
                                 <exclude reference="NHj-Y0-7JB"/>
+                                <exclude reference="eiC-CG-xL9"/>
                                 <exclude reference="AxT-wH-eor"/>
+                                <exclude reference="XFb-fs-dHS"/>
                                 <exclude reference="prO-v4-gdd"/>
+                                <exclude reference="6xq-9K-epU"/>
                                 <exclude reference="zKs-Ue-iZ6"/>
+                                <exclude reference="Dbl-LN-U7g"/>
                                 <exclude reference="5oZ-Ls-yrL"/>
+                                <exclude reference="GmS-J7-Ca1"/>
                                 <exclude reference="uHu-p4-cgh"/>
+                                <exclude reference="guk-rL-zRL"/>
                                 <exclude reference="MQq-rN-uaM"/>
+                                <exclude reference="ubO-nK-mJe"/>
                                 <exclude reference="TzZ-q8-7y6"/>
+                                <exclude reference="afO-vx-Z4h"/>
                                 <exclude reference="dZe-iV-KpQ"/>
+                                <exclude reference="3qm-hf-UBd"/>
                                 <exclude reference="3pG-ei-cIv"/>
+                                <exclude reference="hxe-1E-Gim"/>
                                 <exclude reference="Wdv-qZ-t6t"/>
+                                <exclude reference="9te-fU-sKs"/>
                                 <exclude reference="mZa-Jw-qhT"/>
+                                <exclude reference="xUt-5B-hjE"/>
                                 <exclude reference="8Xc-VJ-ccu"/>
+                                <exclude reference="yjy-v7-I2B"/>
                                 <exclude reference="wn5-NH-Xym"/>
+                                <exclude reference="t2M-UG-zLD"/>
                                 <exclude reference="o8L-DY-cKH"/>
+                                <exclude reference="gaE-H2-qQE"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -310,48 +508,84 @@
                                 <include reference="UGn-TH-vTF"/>
                                 <include reference="Mgj-AB-TwB"/>
                                 <include reference="7Mp-fu-tN2"/>
+                                <include reference="bdO-km-Vtx"/>
                                 <include reference="vP5-1a-6Dq"/>
+                                <include reference="drn-6N-U9Z"/>
                                 <include reference="5Hq-qn-eoU"/>
+                                <include reference="Ipy-k2-PWr"/>
                                 <include reference="NHj-Y0-7JB"/>
+                                <include reference="eiC-CG-xL9"/>
                                 <include reference="AxT-wH-eor"/>
+                                <include reference="XFb-fs-dHS"/>
                                 <include reference="prO-v4-gdd"/>
+                                <include reference="6xq-9K-epU"/>
                                 <include reference="zKs-Ue-iZ6"/>
+                                <include reference="Dbl-LN-U7g"/>
                                 <include reference="5oZ-Ls-yrL"/>
+                                <include reference="GmS-J7-Ca1"/>
                                 <include reference="uHu-p4-cgh"/>
+                                <include reference="guk-rL-zRL"/>
                                 <include reference="MQq-rN-uaM"/>
+                                <include reference="ubO-nK-mJe"/>
                                 <include reference="TzZ-q8-7y6"/>
+                                <include reference="afO-vx-Z4h"/>
                                 <include reference="dZe-iV-KpQ"/>
+                                <include reference="3qm-hf-UBd"/>
                                 <include reference="3pG-ei-cIv"/>
+                                <include reference="hxe-1E-Gim"/>
                                 <include reference="Wdv-qZ-t6t"/>
+                                <include reference="9te-fU-sKs"/>
                                 <include reference="mZa-Jw-qhT"/>
+                                <include reference="xUt-5B-hjE"/>
                                 <include reference="8Xc-VJ-ccu"/>
+                                <include reference="yjy-v7-I2B"/>
                                 <include reference="wn5-NH-Xym"/>
+                                <include reference="t2M-UG-zLD"/>
                                 <include reference="o8L-DY-cKH"/>
+                                <include reference="gaE-H2-qQE"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="XZ5-Dk-E2j"/>
                     <connections>
                         <outlet property="bgImageView" destination="gJz-KT-Ftx" id="Rh8-5e-ak1"/>
+                        <outlet property="bsBtn" destination="bdO-km-Vtx" id="5AH-kg-249"/>
                         <outlet property="bsImageView" destination="7Mp-fu-tN2" id="ruK-Mh-0fu"/>
+                        <outlet property="cmBtn" destination="drn-6N-U9Z" id="bjm-YT-VHi"/>
                         <outlet property="cmImageView" destination="vP5-1a-6Dq" id="o1q-Cj-Bn1"/>
-                        <outlet property="cnImageView" destination="NHj-Y0-7JB" id="XT1-iM-g73"/>
+                        <outlet property="cnBtn" destination="eiC-CG-xL9" id="nSd-Zh-FE8"/>
+                        <outlet property="cnImageView" destination="NHj-Y0-7JB" id="7LO-aE-Lln"/>
+                        <outlet property="cqBtn" destination="3qm-hf-UBd" id="suM-uI-b0L"/>
                         <outlet property="cqImageView" destination="dZe-iV-KpQ" id="vR6-yO-da0"/>
+                        <outlet property="fxBtn" destination="hxe-1E-Gim" id="xA3-cK-Lhn"/>
                         <outlet property="fxImageView" destination="3pG-ei-cIv" id="4R4-c5-arg"/>
+                        <outlet property="hkBtn" destination="ubO-nK-mJe" id="tK4-za-TJ3"/>
                         <outlet property="hkImageView" destination="MQq-rN-uaM" id="f3y-c6-THS"/>
+                        <outlet property="hpBtn" destination="6xq-9K-epU" id="o1K-iU-x3L"/>
                         <outlet property="hpImageView" destination="prO-v4-gdd" id="tb4-Mc-F0B"/>
+                        <outlet property="jaBtn" destination="Dbl-LN-U7g" id="Qyx-CT-Dbu"/>
                         <outlet property="jaImageView" destination="zKs-Ue-iZ6" id="pdE-PE-imZ"/>
+                        <outlet property="jdBtn" destination="9te-fU-sKs" id="6Vx-Ew-5lS"/>
                         <outlet property="jdImageView" destination="Wdv-qZ-t6t" id="VqN-dh-OVb"/>
+                        <outlet property="jsBtn" destination="xUt-5B-hjE" id="ebn-lf-Ztj"/>
                         <outlet property="jsImageView" destination="mZa-Jw-qhT" id="nX7-cR-Gf2"/>
+                        <outlet property="mhBtn" destination="yjy-v7-I2B" id="6D6-ov-2uT"/>
                         <outlet property="mhImageView" destination="8Xc-VJ-ccu" id="Dnu-zm-4uj"/>
+                        <outlet property="pdBtn" destination="Ipy-k2-PWr" id="DEF-p3-fQG"/>
                         <outlet property="pdImageView" destination="5Hq-qn-eoU" id="dog-IJ-ttM"/>
+                        <outlet property="ptBtn" destination="GmS-J7-Ca1" id="Wr5-7s-5be"/>
                         <outlet property="ptIamgeView" destination="5oZ-Ls-yrL" id="hhA-9t-9eh"/>
+                        <outlet property="qpBtn" destination="t2M-UG-zLD" id="q1n-ny-jQh"/>
                         <outlet property="qpImageView" destination="wn5-NH-Xym" id="JPq-JC-kIi"/>
+                        <outlet property="sjBtn" destination="gaE-H2-qQE" id="FRi-57-Xz3"/>
                         <outlet property="sjImageView" destination="o8L-DY-cKH" id="JTb-cJ-is7"/>
                         <outlet property="urbanBtn" destination="Mgj-AB-TwB" id="c7L-jY-UG7"/>
                         <outlet property="wholeBtn" destination="UGn-TH-vTF" id="9Tz-Hz-lY6"/>
+                        <outlet property="xhBtn" destination="XFb-fs-dHS" id="KwM-2E-Hur"/>
                         <outlet property="xhImageView" destination="AxT-wH-eor" id="GZQ-tf-lPx"/>
+                        <outlet property="ypBtn" destination="afO-vx-Z4h" id="U8X-Bw-3LV"/>
                         <outlet property="ypImageView" destination="TzZ-q8-7y6" id="KMr-pV-IUW"/>
+                        <outlet property="zbBtn" destination="guk-rL-zRL" id="8TM-8I-AeT"/>
                         <outlet property="zbImageView" destination="uHu-p4-cgh" id="so0-U9-BAa"/>
                     </connections>
                 </viewController>
