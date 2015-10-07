@@ -137,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				0ECFD17C1BB81A9100E6B390 /* Model */,
+				0E86D7471BB44D0B00B1F158 /* Controller */,
 				0E86D73C1BB4404B00B1F158 /* Util */,
 				0E0DA8011BB188040029808F /* AppDelegate.h */,
 				0E0DA8021BB188040029808F /* AppDelegate.mm */,
@@ -161,7 +162,6 @@
 		0E86D73C1BB4404B00B1F158 /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				0E86D7471BB44D0B00B1F158 /* Controller */,
 				0E86D73D1BB440AB00B1F158 /* NetWork */,
 			);
 			name = Util;
@@ -185,6 +185,11 @@
 			isa = PBXGroup;
 			children = (
 				F127448D1BB8357900622534 /* UserDetailViewController */,
+				F1FB1AEB1BB69E1A004C488E /* HomeTableView */,
+				F13F01AE1BB81A830023A429 /* ExploreViewController */,
+				F13F01B21BB820CA0023A429 /* LightupViewController */,
+				F1FEE3AF1BB66E3500D99A16 /* PhotoViewController.h */,
+				F1FEE3B01BB66E3500D99A16 /* PhotoViewController.m */,
 				0E86D7481BB44EB800B1F158 /* LoginViewController.h */,
 				0E86D7491BB44EB800B1F158 /* LoginViewController.m */,
 				F1FB1AE81BB695E3004C488E /* RegisterViewController.h */,
@@ -193,11 +198,6 @@
 				F1FEE39E1BB662A800D99A16 /* DetailTabBarViewController.m */,
 				F1FEE3A31BB667AA00D99A16 /* HomeNavgationViewController.h */,
 				F1FEE3A41BB667AA00D99A16 /* HomeNavgationViewController.m */,
-				F1FB1AEB1BB69E1A004C488E /* HomeTableView */,
-				F13F01AE1BB81A830023A429 /* ExploreViewController */,
-				F13F01B21BB820CA0023A429 /* LightupViewController */,
-				F1FEE3AF1BB66E3500D99A16 /* PhotoViewController.h */,
-				F1FEE3B01BB66E3500D99A16 /* PhotoViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -387,8 +387,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0ECFD1821BB828BA00E6B390 /* Region.m in Sources */,
-				0ECFD17F1BB81ACC00E6B390 /* User.m in Sources */,
 				F1FEE3A81BB6682700D99A16 /* ExploreViewController.m in Sources */,
 				F1FEE3AE1BB6685600D99A16 /* UserViewController.m in Sources */,
 				0E0DA8031BB188040029808F /* AppDelegate.mm in Sources */,

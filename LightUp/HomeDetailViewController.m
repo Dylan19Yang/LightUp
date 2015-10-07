@@ -8,6 +8,8 @@
 
 #import "HomeDetailViewController.h"
 #import "HomeTableViewCell.h"
+#import "API.h"
+#import "User.h"
 @interface HomeDetailViewController ()
 
 @end
@@ -74,6 +76,24 @@
     
 }
 
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+//    UIAlertView *waitView=[[UIAlertView alloc] initWithTitle:@"请稍候" message:nil delegate:nil cancelButtonTitle:nil otherButtonTitles:nil];
+//    [waitView show];
+//    [[API sharedAPI] allMessagesWithUserId:[User sharedInstance].userId andBLock:^(id responseObject, NSError *error) {
+//        [waitView dismissWithClickedButtonIndex:0 animated:YES];
+//        NSArray *array=(NSArray*)responseObject;
+//        if (error) {
+//            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"错误" message:@"网络异常" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+//            [alert show];
+//        }
+//        else {
+//            
+//        }
+//    }];
+    
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -101,25 +121,9 @@
 {
     
     HomeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HomeTableViewCell" forIndexPath:indexPath];
-    
-//    if(cell == nil)
-//    {
-//        NSLog(@"cell = nil");
-//        cell = [[HomeTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdetify];
-//    }
-    
+        
     return cell;
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (IBAction)navigationItemBtn:(id)sender {
     NSLog(@"hahahahahaha");
