@@ -21,6 +21,13 @@
 @property(nonatomic,strong) BMKLocationService *locService;
 @property(nonatomic,strong) BMKUserLocation* userLocation;
 @property (weak, nonatomic) IBOutlet UILabel *locationLabel;
+@property (weak, nonatomic) IBOutlet UIView *pushView;
+
+- (IBAction)lightupBtn:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *sharetoWeiboBtn;
+@property (nonatomic) BOOL isShare;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *cancelBtn;
+- (IBAction)cancelBtnClickEvent:(id)sender;
 
 - (IBAction)camera:(id)sender;
 - (IBAction)album:(id)sender;

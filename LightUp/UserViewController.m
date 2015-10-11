@@ -21,6 +21,7 @@
     [super viewDidLoad];
     self.isFollow = NO;
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:255/255.0 green:204/255.0 blue:0/255.0 alpha:1/255.0];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"LightupTitleWithoutBtn.png"] forBarMetrics:UIBarMetricsDefault];
     [self.followBtn addTarget:self action:@selector(followBtnClickEvent) forControlEvents:UIControlEventTouchUpInside];
 
     if (self.isSelf) {

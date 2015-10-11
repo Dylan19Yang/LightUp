@@ -11,7 +11,7 @@
 		0E0DA8031BB188040029808F /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0E0DA8021BB188040029808F /* AppDelegate.mm */; };
 		0E0DA8091BB188040029808F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E0DA8071BB188040029808F /* Main.storyboard */; };
 		0E0DA80B1BB188040029808F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E0DA80A1BB188040029808F /* Assets.xcassets */; };
-		0E1980F71BC4F4BB009B635B /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1980F61BC4F4BB009B635B /* Message.m */; settings = {ASSET_TAGS = (); }; };
+		0E1980F71BC4F4BB009B635B /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1980F61BC4F4BB009B635B /* Message.m */; };
 		0E1980F81BC5645A009B635B /* HomeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FB1AF51BB6A2EC004C488E /* HomeDetailViewController.m */; };
 		0E1980F91BC564E9009B635B /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECFD17E1BB81ACC00E6B390 /* User.m */; settings = {ASSET_TAGS = (); }; };
 		0E1980FA1BC564ED009B635B /* Region.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECFD1811BB828BA00E6B390 /* Region.m */; settings = {ASSET_TAGS = (); }; };
@@ -36,6 +36,7 @@
 		F14867C81BC4FAA900BFF082 /* SingleHomeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F14867C71BC4FAA900BFF082 /* SingleHomeDetailViewController.m */; };
 		F14867CB1BC502F400BFF082 /* CommentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F14867CA1BC502F400BFF082 /* CommentTableViewCell.m */; };
 		F14867CE1BC50B6A00BFF082 /* LightupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F14867CD1BC50B6A00BFF082 /* LightupViewController.m */; };
+		F14F2D081BCA8C9F00CBFA2B /* BaiduMapAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F14F2D071BCA8C9F00CBFA2B /* BaiduMapAPI.framework */; };
 		F1FB1AEA1BB695E3004C488E /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FB1AE91BB695E3004C488E /* RegisterViewController.m */; };
 		F1FB1AEF1BB69E7D004C488E /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FB1AED1BB69E7D004C488E /* HomeTableViewCell.m */; };
 		F1FEE39F1BB662A800D99A16 /* DetailTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FEE39E1BB662A800D99A16 /* DetailTabBarViewController.m */; };
@@ -55,7 +56,6 @@
 		0E0DA80F1BB188040029808F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E1980F51BC4F4BB009B635B /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
 		0E1980F61BC4F4BB009B635B /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
-		0E1981081BCA5896009B635B /* BaiduMapAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI.framework; path = "../../Downloads/BaiduMap_IOSSDK_v2.8.1_All/BaiduMap_IOSSDK_v2.8.1_Lib/Release-iphoneos/BaiduMapAPI.framework"; sourceTree = "<group>"; };
 		0E19810A1BCA6A1F009B635B /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comment.h; sourceTree = "<group>"; };
 		0E19810B1BCA6A1F009B635B /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
 		0E19810D1BCA9735009B635B /* searchNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = searchNameViewController.h; sourceTree = "<group>"; };
@@ -95,6 +95,7 @@
 		F14867CA1BC502F400BFF082 /* CommentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentTableViewCell.m; sourceTree = "<group>"; };
 		F14867CC1BC50B6A00BFF082 /* LightupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightupViewController.h; sourceTree = "<group>"; };
 		F14867CD1BC50B6A00BFF082 /* LightupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightupViewController.m; sourceTree = "<group>"; };
+		F14F2D071BCA8C9F00CBFA2B /* BaiduMapAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI.framework; sourceTree = "<group>"; };
 		F1FB1AE81BB695E3004C488E /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		F1FB1AE91BB695E3004C488E /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		F1FB1AEC1BB69E7D004C488E /* HomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
@@ -124,7 +125,7 @@
 				0E86D7331BB43ACD00B1F158 /* OpenGLES.framework in Frameworks */,
 				0E86D7311BB43AC600B1F158 /* QuartzCore.framework in Frameworks */,
 				0E86D72F1BB43ABE00B1F158 /* CoreLocation.framework in Frameworks */,
-				0E1981091BCA5896009B635B /* BaiduMapAPI.framework in Frameworks */,
+				F14F2D081BCA8C9F00CBFA2B /* BaiduMapAPI.framework in Frameworks */,
 				CA9FB8C463523A5D4D3CB1A2 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,12 +202,11 @@
 		0E86D7471BB44D0B00B1F158 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F14F2D091BCA94B100CBFA2B /* PhotoViewController */,
 				F127448D1BB8357900622534 /* UserDetailViewController */,
 				F1FB1AEB1BB69E1A004C488E /* HomeTableView */,
 				F13F01AE1BB81A830023A429 /* ExploreViewController */,
 				F13F01B21BB820CA0023A429 /* LightupViewController */,
-				F1FEE3AF1BB66E3500D99A16 /* PhotoViewController.h */,
-				F1FEE3B01BB66E3500D99A16 /* PhotoViewController.m */,
 				0E86D7481BB44EB800B1F158 /* LoginViewController.h */,
 				0E86D7491BB44EB800B1F158 /* LoginViewController.m */,
 				F1FB1AE81BB695E3004C488E /* RegisterViewController.h */,
@@ -237,7 +237,7 @@
 		A61A37449CFFC6DDD8B125D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0E1981081BCA5896009B635B /* BaiduMapAPI.framework */,
+				F14F2D071BCA8C9F00CBFA2B /* BaiduMapAPI.framework */,
 				F13F01A61BB7C3810023A429 /* mapapi.bundle */,
 				0E86D7381BB43AE500B1F158 /* Security.framework */,
 				0E86D7361BB43ADE00B1F158 /* CoreGraphics.framework */,
@@ -290,6 +290,15 @@
 			name = LightupViewController;
 			sourceTree = "<group>";
 		};
+		F14F2D091BCA94B100CBFA2B /* PhotoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F1FEE3AF1BB66E3500D99A16 /* PhotoViewController.h */,
+				F1FEE3B01BB66E3500D99A16 /* PhotoViewController.m */,
+			);
+			name = PhotoViewController;
+			sourceTree = "<group>";
+		};
 		F1FB1AEB1BB69E1A004C488E /* HomeTableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -319,6 +328,7 @@
 				0E0DA7F81BB188040029808F /* Frameworks */,
 				0E0DA7F91BB188040029808F /* Resources */,
 				0900B93D349B5F5B8211F2C2 /* Copy Pods Resources */,
+				EAF7C6EB67A092F46D29BF5B /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -405,6 +415,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAF7C6EB67A092F46D29BF5B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

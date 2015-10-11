@@ -18,7 +18,10 @@
     [super viewDidLoad];
     self.mapScrollView.delegate = self;
     self.mapScrollView.contentSize = CGSizeMake(375, 900);
+    [self.mapScrollView setScrollEnabled:YES];
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:255/255.0 green:204/255.0 blue:0/255.0 alpha:1/255.0];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"LightupTitleWithoutBtn.png"] forBarMetrics:UIBarMetricsDefault];
+
     // Do any additional setup after loading the view.
 }
 
