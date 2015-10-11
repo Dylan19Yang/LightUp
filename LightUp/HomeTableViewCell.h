@@ -15,8 +15,8 @@
 
 @property (weak, nonatomic) id<CommentDelegate> myDelegate;
 
-@property (weak, nonatomic) IBOutlet UIButton *userImage;
-@property (weak, nonatomic) IBOutlet UIButton *messageImage;
+@property (weak, nonatomic) IBOutlet UIImageView *userImage;
+@property (weak, nonatomic) IBOutlet UIImageView *messageImage;
 @property (weak, nonatomic) IBOutlet UILabel *locationDescriptionLabel;
 @property (weak, nonatomic) IBOutlet UIButton *likeButton;
 @property (weak, nonatomic) IBOutlet UILabel *userNameLabel;

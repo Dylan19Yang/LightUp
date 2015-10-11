@@ -7,7 +7,7 @@
 //
 
 #import "RegisterViewController.h"
-#import "API.h"
+#import "User.h"
 #import "DetailTabBarViewController.h"
 
 @interface RegisterViewController ()
@@ -115,7 +115,7 @@
         UIAlertView *waitAlert = [[UIAlertView alloc]initWithTitle:@"请稍候" message:nil delegate:self cancelButtonTitle:nil otherButtonTitles:nil, nil];
         [waitAlert show];
 
-        [[API sharedAPI] registerWithName:self.registerNameTextField.text mobile:self.registerPhoneTextField.text password:self.registerPassWordTetxField.text gender:self.isMale?@"男":@"女" andBLock:^(id responseObject, NSError *error) {
+        [[User sharedInstance] registerWithName:self.registerNameTextField.text mobile:self.registerPhoneTextField.text password:self.registerPassWordTetxField.text gender:self.isMale?@"男":@"女" andBLock:^(id responseObject, NSError *error) {
             [waitAlert dismissWithClickedButtonIndex:0 animated:YES];
             NSDictionary *dic=(NSDictionary*)responseObject;
             if (error) {

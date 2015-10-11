@@ -8,8 +8,7 @@
 
 #import "LoginViewController.h"
 #import "DetailTabBarViewController.h"
-#import "API.h"
-
+#import "User.h"
 @interface LoginViewController ()
 
 @end
@@ -40,7 +39,7 @@
         UIAlertView *waitAlert = [[UIAlertView alloc]initWithTitle:@"请稍候" message:nil delegate:self cancelButtonTitle:nil otherButtonTitles:nil, nil];
         [waitAlert show];
         
-        [[API sharedAPI] loginWithAccount:self.userPhoneNumberTextField.text password:self.userPassWordTextField.text andBLock:^(id responseObject, NSError *error) {
+        [[User sharedInstance] loginWithAccount:self.userPhoneNumberTextField.text password:self.userPassWordTextField.text andBLock:^(id responseObject, NSError *error) {
             
             [waitAlert dismissWithClickedButtonIndex:0 animated:YES];
             NSDictionary *dic=(NSDictionary*)responseObject;

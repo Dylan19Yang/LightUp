@@ -15,6 +15,8 @@
 		0E1980F81BC5645A009B635B /* HomeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FB1AF51BB6A2EC004C488E /* HomeDetailViewController.m */; };
 		0E1980F91BC564E9009B635B /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECFD17E1BB81ACC00E6B390 /* User.m */; settings = {ASSET_TAGS = (); }; };
 		0E1980FA1BC564ED009B635B /* Region.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECFD1811BB828BA00E6B390 /* Region.m */; settings = {ASSET_TAGS = (); }; };
+		0E1981091BCA5896009B635B /* BaiduMapAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E1981081BCA5896009B635B /* BaiduMapAPI.framework */; settings = {ASSET_TAGS = (); }; };
+		0E19810C1BCA6A1F009B635B /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E19810B1BCA6A1F009B635B /* Comment.m */; settings = {ASSET_TAGS = (); }; };
 		0E86D72F1BB43ABE00B1F158 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E86D72E1BB43ABE00B1F158 /* CoreLocation.framework */; };
 		0E86D7311BB43AC600B1F158 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E86D7301BB43AC600B1F158 /* QuartzCore.framework */; };
 		0E86D7331BB43ACD00B1F158 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E86D7321BB43ACD00B1F158 /* OpenGLES.framework */; };
@@ -26,7 +28,6 @@
 		0E86D74A1BB44EB800B1F158 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E86D7491BB44EB800B1F158 /* LoginViewController.m */; };
 		0ECFD17B1BB7E35A00E6B390 /* NetworkTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECFD17A1BB7E35A00E6B390 /* NetworkTestViewController.m */; };
 		CA9FB8C463523A5D4D3CB1A2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F06FB972458B08027870A1DA /* libPods.a */; };
-		F13F01A71BB7C3810023A429 /* BaiduMapAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F13F01A51BB7C3810023A429 /* BaiduMapAPI.framework */; };
 		F13F01A81BB7C3810023A429 /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F13F01A61BB7C3810023A429 /* mapapi.bundle */; };
 		F13F01AA1BB7C7C70023A429 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F13F01A91BB7C7C70023A429 /* Launch Screen.xib */; };
 		F13F01AD1BB81A240023A429 /* ExploreDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F13F01AC1BB81A240023A429 /* ExploreDetailViewController.m */; };
@@ -53,6 +54,9 @@
 		0E0DA80F1BB188040029808F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E1980F51BC4F4BB009B635B /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
 		0E1980F61BC4F4BB009B635B /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		0E1981081BCA5896009B635B /* BaiduMapAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI.framework; path = "../../Downloads/BaiduMap_IOSSDK_v2.8.1_All/BaiduMap_IOSSDK_v2.8.1_Lib/Release-iphoneos/BaiduMapAPI.framework"; sourceTree = "<group>"; };
+		0E19810A1BCA6A1F009B635B /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comment.h; sourceTree = "<group>"; };
+		0E19810B1BCA6A1F009B635B /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
 		0E86D72E1BB43ABE00B1F158 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		0E86D7301BB43AC600B1F158 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0E86D7321BB43ACD00B1F158 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -76,7 +80,6 @@
 		43297A19F674DE35F1005359 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		BEFAFEAC8FA27BC89033150D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F06FB972458B08027870A1DA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		F13F01A51BB7C3810023A429 /* BaiduMapAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI.framework; sourceTree = "<group>"; };
 		F13F01A61BB7C3810023A429 /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = mapapi.bundle; sourceTree = "<group>"; };
 		F13F01A91BB7C7C70023A429 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 		F13F01AB1BB81A240023A429 /* ExploreDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExploreDetailViewController.h; sourceTree = "<group>"; };
@@ -118,7 +121,7 @@
 				0E86D7331BB43ACD00B1F158 /* OpenGLES.framework in Frameworks */,
 				0E86D7311BB43AC600B1F158 /* QuartzCore.framework in Frameworks */,
 				0E86D72F1BB43ABE00B1F158 /* CoreLocation.framework in Frameworks */,
-				F13F01A71BB7C3810023A429 /* BaiduMapAPI.framework in Frameworks */,
+				0E1981091BCA5896009B635B /* BaiduMapAPI.framework in Frameworks */,
 				CA9FB8C463523A5D4D3CB1A2 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,6 +225,8 @@
 				0ECFD1811BB828BA00E6B390 /* Region.m */,
 				0E1980F51BC4F4BB009B635B /* Message.h */,
 				0E1980F61BC4F4BB009B635B /* Message.m */,
+				0E19810A1BCA6A1F009B635B /* Comment.h */,
+				0E19810B1BCA6A1F009B635B /* Comment.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -229,7 +234,7 @@
 		A61A37449CFFC6DDD8B125D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F13F01A51BB7C3810023A429 /* BaiduMapAPI.framework */,
+				0E1981081BCA5896009B635B /* BaiduMapAPI.framework */,
 				F13F01A61BB7C3810023A429 /* mapapi.bundle */,
 				0E86D7381BB43AE500B1F158 /* Security.framework */,
 				0E86D7361BB43ADE00B1F158 /* CoreGraphics.framework */,
@@ -330,7 +335,7 @@
 				TargetAttributes = {
 					0E0DA7FA1BB188040029808F = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = 62V7J8S6D3;
+						DevelopmentTeam = EN5395PPNN;
 					};
 				};
 			};
@@ -410,6 +415,7 @@
 				0E1980FA1BC564ED009B635B /* Region.m in Sources */,
 				F14867CE1BC50B6A00BFF082 /* LightupViewController.m in Sources */,
 				F1FEE3AE1BB6685600D99A16 /* UserViewController.m in Sources */,
+				0E19810C1BCA6A1F009B635B /* Comment.m in Sources */,
 				0E0DA8031BB188040029808F /* AppDelegate.mm in Sources */,
 				F1FEE39F1BB662A800D99A16 /* DetailTabBarViewController.m in Sources */,
 				0E86D7411BB442A100B1F158 /* HttpClient.m in Sources */,
@@ -527,12 +533,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BEFAFEAC8FA27BC89033150D /* Pods.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/LightUp/FrameWork",
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -545,6 +551,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Atlas19.LightUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Debug;
 		};
@@ -552,12 +559,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 43297A19F674DE35F1005359 /* Pods.release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/LightUp/FrameWork",
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -570,6 +577,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Atlas19.LightUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Release;
 		};
