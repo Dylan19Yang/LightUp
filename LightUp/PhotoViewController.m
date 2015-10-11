@@ -19,6 +19,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:255/255.0 green:204/255.0 blue:0/255.0 alpha:1/255.0];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"LightupTitleWithoutBtn.png"] forBarMetrics:UIBarMetricsDefault];
+    [self.cancelBtn setTintColor:[UIColor colorWithRed:255/255.0 green:204/255.0 blue:0/255.0 alpha:1]];
+
+    //[self.navigationItem setHidesBackButton:YES];
     //设置定位精确度，默认：kCLLocationAccuracyBest
     [BMKLocationService setLocationDesiredAccuracy:kCLLocationAccuracyNearestTenMeters];
     //指定最小距离更新(米)，默认：kCLDistanceFilterNone
@@ -29,9 +34,36 @@
     self.locService.delegate = self;
     //启动LocationService
     [self.locService startUserLocationService];
+    
+    [self.sharetoWeiboBtn addTarget:self action:@selector(sharetoWeiboClickEvent) forControlEvents:UIControlEventTouchUpInside];
+    self.isShare = NO; //这个会从服务器拿到是否分享的状态，设置一下
+    self.pushView.hidden = YES;
 }
 
 - (IBAction)send:(id)sender {
+}
+
+- (IBAction)lightupBtn:(id)sender {
+}
+
+- (void)sharetoWeiboClickEvent
+{
+    if(self.isShare)
+    {
+        [self.sharetoWeiboBtn setBackgroundImage:[UIImage imageNamed:@"SharetoWeiboOff"] forState:UIControlStateNormal];
+        self.isShare = NO;
+    }
+    else
+    {
+        //这里是分享！
+        [self.sharetoWeiboBtn setBackgroundImage:[UIImage imageNamed:@"SharetoWeiboOn"] forState:UIControlStateNormal];
+        self.isShare = YES;
+    }
+}
+
+- (IBAction)cancelBtnClickEvent:(id)sender {
+    self.pushView.hidden = YES;
+    [self.cancelBtn setTintColor:[UIColor colorWithRed:255/255.0 green:204/255.0 blue:0/255.0 alpha:1]];
 }
 
 - (IBAction)camera:(id)sender {
@@ -41,6 +73,9 @@
     imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
     //            [self presentModalViewController:imagePicker animated:YES];
     [self presentViewController:imagePicker animated:YES completion:nil];
+    self.pushView.hidden = NO;
+    [self.cancelBtn setTintColor:[UIColor colorWithRed:49/255.0 green:49/255.0 blue:49/255.0 alpha:1]];
+
 }
 
 - (IBAction)album:(id)sender {
@@ -50,6 +85,8 @@
     imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     //            [self presentModalViewController:imagePicker animated:YES];
     [self presentViewController:imagePicker animated:YES completion:nil];
+    self.pushView.hidden = NO;
+    [self.cancelBtn setTintColor:[UIColor colorWithRed:49/255.0 green:49/255.0 blue:49/255.0 alpha:1]];
 }
 
 #pragma mark -

@@ -21,7 +21,8 @@
     [self hideOtherCityBtn:NO];
     [self bindEventForBtn];
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:255/255.0 green:204/255.0 blue:0/255.0 alpha:1/255.0];
-    
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"LightupTitleWithoutBtn.png"] forBarMetrics:UIBarMetricsDefault];
+
     [self.wholeBtn addTarget:self action:@selector(wholeBtnClickEvent) forControlEvents:UIControlEventTouchUpInside];
     [self.urbanBtn addTarget:self action:@selector(urbanBtnClickEvent) forControlEvents:UIControlEventTouchUpInside];
     
