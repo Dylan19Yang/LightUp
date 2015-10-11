@@ -7,6 +7,9 @@
 //
 
 #import "UserViewController.h"
+#import <AFNetworking/UIImageView+AFNetworking.h>
+#import "User.h"
+#import "API.h"
 
 @interface UserViewController ()
 
@@ -19,7 +22,20 @@
     self.isFollow = NO;
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:255/255.0 green:204/255.0 blue:0/255.0 alpha:1/255.0];
     [self.followBtn addTarget:self action:@selector(followBtnClickEvent) forControlEvents:UIControlEventTouchUpInside];
-    // Do any additional setup after loading the view.
+
+    if (self.isSelf) {
+        self.followBtn.hidden=true;
+        [self.userHeadImageView setImageWithURL:[NSURL URLWithString:[User sharedInstance].imageUrl]];
+        self.persentNumberLabel.text=[NSString stringWithFormat:@"%.2f%%",[[User sharedInstance].percent floatValue]];
+    }
+    else{
+        self.changeInfoButton.hidden=true;
+        self.persentNumberLabel.text=self.percentage;
+        [self.userHeadImageView  setImageWithURL:[NSURL URLWithString:self.imageUrl]];
+        if ([self.state isEqualToString:@"1"]) {
+            [self.followBtn setBackgroundImage:[UIImage imageNamed:@"Follow"] forState:UIControlStateNormal];
+        }
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -27,30 +43,23 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 - (void) followBtnClickEvent
 {
     if(self.isFollow)
     {
         [self.followBtn setBackgroundImage:[UIImage imageNamed:@"Follow"] forState:UIControlStateNormal];
         self.isFollow = NO;
-        //取消关注
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            [[API sharedAPI] followWithUserId:[User sharedInstance].userId personId:self.userId andBLock:nil];
+        });
     }
     else
     {
         [self.followBtn setBackgroundImage:[UIImage imageNamed:@"Unfollow"] forState:UIControlStateNormal];
         self.isFollow = YES;
-        //关注
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            [[API sharedAPI] followWithUserId:[User sharedInstance].userId personId:self.userId andBLock:nil];
+        });
     }
     
 }

@@ -79,42 +79,43 @@
     
     
     self.CommentView.hidden = YES;
-    
-    
-    self.source=[NSMutableArray array];
-    UIAlertView *waitView=[[UIAlertView alloc] initWithTitle:@"请稍候" message:nil delegate:nil cancelButtonTitle:nil otherButtonTitles:nil];
-    [waitView show];
-    [[API sharedAPI] allMessagesWithUserId:[User sharedInstance].userId andBLock:^(id responseObject, NSError *error) {
-        [waitView dismissWithClickedButtonIndex:0 animated:YES];
-        NSArray *array=(NSArray*)responseObject;
-        if (error) {
-            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"错误" message:@"网络异常" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
-            [alert show];
-        }
-        else {
-            for (NSDictionary *dic in array) {
-                Message *message=[[Message alloc] init];
-                message.userId=dic[@"User_id"];
-                message.userName=dic[@"User_name"];
-                message.headImageUrl=dic[@"User_headshot"];
-                message.percentage=dic[@"User_achievement" ];
-                message.messageId=dic[@"Message_id" ];
-                message.messageContent=dic[@"Message_content"];
-                message.messageImageUrl=dic[@"Message_image"];
-                message.regionId=dic[@"Region_id"];
-                message.messageTime=dic[@"Message_time"];
-                message.messageLike=dic[@"Message_like"];
-                message.state=dic[@"state"];
-                [self.source addObject:message];
-            }
-            [self.HomeTableView reloadData];
-        }
-    }];
 
 }
 
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    
+    self.source=[NSMutableArray array];
+    UIAlertView *waitView=[[UIAlertView alloc] initWithTitle:@"请稍候" message:nil delegate:nil cancelButtonTitle:nil otherButtonTitles:nil];
+    [waitView show];
+    if (self.district==nil || [self.district isEqualToString:@"-1"]) {
+        [[API sharedAPI] allMessagesWithUserId:[User sharedInstance].userId andBLock:^(id responseObject, NSError *error) {
+            [waitView dismissWithClickedButtonIndex:0 animated:YES];
+            NSArray *array=(NSArray*)responseObject;
+            if (error) {
+                UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"错误" message:@"网络异常" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+                [alert show];
+            }
+            else {
+                for (NSDictionary *dic in array) {
+                    Message *message=[[Message alloc] init];
+                    message.userId=dic[@"User_id"];
+                    message.userName=dic[@"User_name"];
+                    message.headImageUrl=dic[@"User_headshot"];
+                    message.percentage=dic[@"User_achievement" ];
+                    message.messageId=dic[@"Message_id" ];
+                    message.messageContent=dic[@"Message_content"];
+                    message.messageImageUrl=dic[@"Message_image"];
+                    message.regionId=dic[@"Region_id"];
+                    message.messageTime=dic[@"Message_time"];
+                    message.messageLike=dic[@"Message_like"];
+                    message.state=dic[@"state"];
+                    [self.source addObject:message];
+                }
+                [self.HomeTableView reloadData];
+            }
+        }];
+    }
 }
 
 #pragma mark - TableView
@@ -155,6 +156,15 @@
     self.currentRow = cellRow;
 }
 
+-(void)like:(id)sender{
+    HomeTableViewCell *cell=sender;
+    NSUInteger row=[self.HomeTableView indexPathForCell:cell].row;
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//        [[API sharedAPI] ];
+    });
+
+}
+
 - (IBAction)SubmitCommentBtn:(id)sender {
     NSLog(@"Submmit!");
     UIAlertView *waitView=[[UIAlertView alloc] initWithTitle:@"请稍候" message:nil delegate:nil cancelButtonTitle:nil otherButtonTitles:nil];
@@ -192,7 +202,6 @@
     self.CommentView.hidden = YES;
     NSLog(@"Cancel!");
 }
-
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     SingleHomeDetailViewController *vc=segue.destinationViewController;

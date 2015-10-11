@@ -28,4 +28,7 @@
     [self.myDelegate showCommentView:self.tag];
 }
 
+-(void)like{
+    [self.myDelegate like:self];
+}
 @end

@@ -26,6 +26,7 @@
 #define API_Search_User                         @"Search_user.php"
 #define API_Edit_User_Info                      @"Edit_userinfo.php"
 #define API_UploadHeadShot                      @"Edit_headshot.php"
+#defineAPI_Like                                 @"Like.php"
 
 //typedef block
 typedef void (^ResponseBlock)(id responseObject, NSError *error);

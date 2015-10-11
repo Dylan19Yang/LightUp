@@ -24,6 +24,7 @@
 -(void)followWithUserId:(NSString*)identify personId:(NSString*)personId andBLock:(ResponseBlock)block;
 -(void)searchUserWIthUserId:(NSString*)identify personName:(NSString*)personName andBLock:(ResponseBlock)block;
 -(void)editUserInfoWithUserId:(NSString*)identify gender:(NSString*)gender birthday:(NSString*)birthday andBLock:(ResponseBlock)block;
+-(void)likeWithUserId:(NSString*)identify messageId:(NSString*)messageId andBLock:(ResponseBlock)block;
 
 
 -(void)sendMessageWithContent:(NSString*)content identify:(NSString*)identify longitude:(NSString*)longitude latitude:(NSString*)latitude image:(UIImage*)image fileName:(NSString*)fileName andBlock:(ResponseBlock)block;

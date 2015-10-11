@@ -7,6 +7,8 @@
 //
 
 #import "PhotoViewController.h"
+#import "API.h"
+#import "User.h"
 
 @interface PhotoViewController ()
 
@@ -32,6 +34,21 @@
 }
 
 - (IBAction)send:(id)sender {
+    NSString *userId=[User sharedInstance].userId;
+    NSDate *now=[NSDate date];
+    NSDateFormatter *formatter=[[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyy-MM-DD-HH-mm-ss"];
+    NSString *time=[formatter stringFromDate:now];
+    NSString *fileName=[[userId stringByAppendingString:time] stringByAppendingString:@".png"];
+    UIAlertView *waitView=[[UIAlertView alloc] initWithTitle:@"请稍候" message:nil delegate:nil cancelButtonTitle:nil otherButtonTitles:nil];
+    [waitView show];
+    [[API sharedAPI] sendMessageWithContent:self.textView.text identify:userId longitude:[NSString stringWithFormat:@"%f",self.userLocation.location.coordinate.longitude] latitude:[NSString stringWithFormat:@"%f",self.userLocation.location.coordinate.latitude] image:self.img.image fileName:fileName andBlock:^(id responseObject, NSError *error) {
+        [waitView dismissWithClickedButtonIndex:0 animated:YES];
+        if (error) {
+            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"错误" message:@"网络异常" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+            [alert show];
+        }
+    }];
 }
 
 - (IBAction)camera:(id)sender {

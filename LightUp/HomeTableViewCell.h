@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 @protocol CommentDelegate
 - (void)showCommentView:(NSInteger)cellRow;
+- (void)like:(id)sender;
 @end
 
 @interface HomeTableViewCell : UITableViewCell

@@ -106,6 +106,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="niD-CZ-ibt"/>
                     <connections>
+                        <outlet property="changeInfoButton" destination="LNn-Om-JYr" id="bhB-bg-mqJ"/>
                         <outlet property="followBtn" destination="HCf-h9-QOU" id="5PO-5Y-lcK"/>
                         <outlet property="persentNumberLabel" destination="RIW-tJ-rl2" id="m53-rm-hgb"/>
                         <outlet property="userHeadImageView" destination="Qi5-N3-odQ" id="6rY-vB-vkZ"/>
@@ -865,7 +866,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0HG-nI-bhV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1284.5" y="735.5"/>
+            <point key="canvasLocation" x="1200.5" y="523.5"/>
         </scene>
         <!--Explore Detail View Controller-->
         <scene sceneID="tjU-zu-NJx">
@@ -1154,10 +1155,10 @@
             </objects>
             <point key="canvasLocation" x="1852.5" y="-17.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Search Name View Controller-->
         <scene sceneID="9Vj-4N-uv2">
             <objects>
-                <viewController id="wag-bT-YUX" sceneMemberID="viewController">
+                <viewController id="wag-bT-YUX" customClass="searchNameViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Uzt-Ib-7Wd"/>
                         <viewControllerLayoutGuide type="bottom" id="FDT-18-fVw"/>
@@ -1176,6 +1177,9 @@
                                 <rect key="frame" x="237" y="104" width="46" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="search:" destination="wag-bT-YUX" eventType="touchUpInside" id="Ksb-49-PEv"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
@@ -1183,6 +1187,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="a1p-8e-nEq"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="s9X-Hv-cuZ" id="536-Ur-l3U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JOh-KD-g0L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1741,10 +1748,9 @@
                                     <constraint firstAttribute="width" constant="200" id="yjN-CE-8aD"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="afb-pb-7rv">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Lorem ipsum dolor sitanim id est en legum odioque civiuda." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="afb-pb-7rv">
                                 <rect key="frame" x="20" y="295" width="240" height="128"/>
                                 <animations/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -1913,6 +1919,6 @@
         <image name="zhabei" width="125" height="150"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="pDY-EB-Hn6"/>
+        <segue reference="Ffl-zj-mhV"/>
     </inferredMetricsTieBreakers>
 </document>

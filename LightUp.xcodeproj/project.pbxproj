@@ -17,6 +17,7 @@
 		0E1980FA1BC564ED009B635B /* Region.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ECFD1811BB828BA00E6B390 /* Region.m */; settings = {ASSET_TAGS = (); }; };
 		0E1981091BCA5896009B635B /* BaiduMapAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E1981081BCA5896009B635B /* BaiduMapAPI.framework */; settings = {ASSET_TAGS = (); }; };
 		0E19810C1BCA6A1F009B635B /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E19810B1BCA6A1F009B635B /* Comment.m */; settings = {ASSET_TAGS = (); }; };
+		0E19810F1BCA9735009B635B /* searchNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E19810E1BCA9735009B635B /* searchNameViewController.m */; settings = {ASSET_TAGS = (); }; };
 		0E86D72F1BB43ABE00B1F158 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E86D72E1BB43ABE00B1F158 /* CoreLocation.framework */; };
 		0E86D7311BB43AC600B1F158 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E86D7301BB43AC600B1F158 /* QuartzCore.framework */; };
 		0E86D7331BB43ACD00B1F158 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E86D7321BB43ACD00B1F158 /* OpenGLES.framework */; };
@@ -57,6 +58,8 @@
 		0E1981081BCA5896009B635B /* BaiduMapAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMapAPI.framework; path = "../../Downloads/BaiduMap_IOSSDK_v2.8.1_All/BaiduMap_IOSSDK_v2.8.1_Lib/Release-iphoneos/BaiduMapAPI.framework"; sourceTree = "<group>"; };
 		0E19810A1BCA6A1F009B635B /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comment.h; sourceTree = "<group>"; };
 		0E19810B1BCA6A1F009B635B /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
+		0E19810D1BCA9735009B635B /* searchNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = searchNameViewController.h; sourceTree = "<group>"; };
+		0E19810E1BCA9735009B635B /* searchNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = searchNameViewController.m; sourceTree = "<group>"; };
 		0E86D72E1BB43ABE00B1F158 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		0E86D7301BB43AC600B1F158 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0E86D7321BB43ACD00B1F158 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -298,6 +301,8 @@
 				F14867C71BC4FAA900BFF082 /* SingleHomeDetailViewController.m */,
 				F14867C91BC502F400BFF082 /* CommentTableViewCell.h */,
 				F14867CA1BC502F400BFF082 /* CommentTableViewCell.m */,
+				0E19810D1BCA9735009B635B /* searchNameViewController.h */,
+				0E19810E1BCA9735009B635B /* searchNameViewController.m */,
 			);
 			name = HomeTableView;
 			sourceTree = "<group>";
@@ -412,6 +417,7 @@
 				0E1980F81BC5645A009B635B /* HomeDetailViewController.m in Sources */,
 				F1FEE3A81BB6682700D99A16 /* ExploreViewController.m in Sources */,
 				F14867CB1BC502F400BFF082 /* CommentTableViewCell.m in Sources */,
+				0E19810F1BCA9735009B635B /* searchNameViewController.m in Sources */,
 				0E1980FA1BC564ED009B635B /* Region.m in Sources */,
 				F14867CE1BC50B6A00BFF082 /* LightupViewController.m in Sources */,
 				F1FEE3AE1BB6685600D99A16 /* UserViewController.m in Sources */,

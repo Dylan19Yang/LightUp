@@ -12,6 +12,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *HomeTableView;
 @property (weak, nonatomic) IBOutlet UIView *CommentView;
 @property (weak, nonatomic) IBOutlet UITextView *CommentTextView;
+@property (nonatomic, strong) NSString *district;
 
 
 @property (nonatomic) NSInteger currentRow;
